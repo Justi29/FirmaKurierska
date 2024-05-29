@@ -1,0 +1,5 @@
+C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/FirmaKurierska.Infrastructure/obj/Debug/net6.0/FirmaKurierska.Infrastructure.csproj.AssemblyReference.cache
+C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/FirmaKurierska.Infrastructure/obj/Debug/net6.0/FirmaKurierska.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/FirmaKurierska.Infrastructure/obj/Debug/net6.0/FirmaKurierska.Infrastructure.AssemblyInfoInputs.cache
+C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/FirmaKurierska.Infrastructure/obj/Debug/net6.0/FirmaKurierska.Infrastructure.AssemblyInfo.cs
+C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/FirmaKurierska.Infrastructure/obj/Debug/net6.0/FirmaKurierska.Infrastructure.csproj.CoreCompileInputs.cache

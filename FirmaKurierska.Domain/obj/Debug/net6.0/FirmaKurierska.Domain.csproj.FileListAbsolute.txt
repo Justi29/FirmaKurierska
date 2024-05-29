@@ -1,0 +1,22 @@
+C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/FirmaKurierska.Domain/bin/Debug/net6.0/FirmaKurierska.Domain.exe
+C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/FirmaKurierska.Domain/bin/Debug/net6.0/FirmaKurierska.Domain.deps.json
+C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/FirmaKurierska.Domain/bin/Debug/net6.0/FirmaKurierska.Domain.runtimeconfig.json
+C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/FirmaKurierska.Domain/bin/Debug/net6.0/FirmaKurierska.Domain.dll
+C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/FirmaKurierska.Domain/bin/Debug/net6.0/FirmaKurierska.Domain.pdb
+C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/FirmaKurierska.Domain/obj/Debug/net6.0/FirmaKurierska.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/FirmaKurierska.Domain/obj/Debug/net6.0/FirmaKurierska.Domain.AssemblyInfoInputs.cache
+C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/FirmaKurierska.Domain/obj/Debug/net6.0/FirmaKurierska.Domain.AssemblyInfo.cs
+C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/FirmaKurierska.Domain/obj/Debug/net6.0/FirmaKurierska.Domain.csproj.CoreCompileInputs.cache
+C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/FirmaKurierska.Domain/obj/Debug/net6.0/FirmaKurierska.Domain.dll
+C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/FirmaKurierska.Domain/obj/Debug/net6.0/refint/FirmaKurierska.Domain.dll
+C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/FirmaKurierska.Domain/obj/Debug/net6.0/FirmaKurierska.Domain.pdb
+C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/FirmaKurierska.Domain/obj/Debug/net6.0/FirmaKurierska.Domain.genruntimeconfig.cache
+C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/FirmaKurierska.Domain/obj/Debug/net6.0/ref/FirmaKurierska.Domain.dll
+/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Domain/obj/Debug/net6.0/FirmaKurierska.Domain.csproj.AssemblyReference.cache
+/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Domain/obj/Debug/net6.0/FirmaKurierska.Domain.GeneratedMSBuildEditorConfig.editorconfig
+/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Domain/obj/Debug/net6.0/FirmaKurierska.Domain.AssemblyInfoInputs.cache
+/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Domain/obj/Debug/net6.0/FirmaKurierska.Domain.AssemblyInfo.cs
+/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Domain/obj/Debug/net6.0/FirmaKurierska.Domain.csproj.CoreCompileInputs.cache
+/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Domain/obj/Debug/net6.0/FirmaKurierska.Domain.dll
+/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Domain/obj/Debug/net6.0/refint/FirmaKurierska.Domain.dll
+/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Domain/obj/Debug/net6.0/FirmaKurierska.Domain.pdb
