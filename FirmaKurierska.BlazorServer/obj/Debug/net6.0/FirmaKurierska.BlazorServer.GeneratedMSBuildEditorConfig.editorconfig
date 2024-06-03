@@ -9,53 +9,55 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = FirmaKurierska.BlazorServer
 build_property.RootNamespace = FirmaKurierska.BlazorServer
-build_property.ProjectDir = /Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.BlazorServer/
+build_property.ProjectDir = C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.BlazorServer\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = /Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.BlazorServer
+build_property.MSBuildProjectDirectory = C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.BlazorServer
 build_property._RazorSourceGeneratorDebug = 
 
-[/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.BlazorServer/App.razor]
+[C:/Users/tomec/OneDrive/Pulpit/STUDIA/MGR_2SEMESTR/programowanie aplikacji/FirmaKurierska/FirmaKurierska.BlazorServer/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.BlazorServer/Pages/Counter.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvQ291bnRlci5yYXpvcg==
+[C:/Users/tomec/OneDrive/Pulpit/STUDIA/MGR_2SEMESTR/programowanie aplikacji/FirmaKurierska/FirmaKurierska.BlazorServer/Pages/Counter.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.BlazorServer/Pages/FetchData.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRmV0Y2hEYXRhLnJhem9y
+[C:/Users/tomec/OneDrive/Pulpit/STUDIA/MGR_2SEMESTR/programowanie aplikacji/FirmaKurierska/FirmaKurierska.BlazorServer/Pages/FetchData.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRmV0Y2hEYXRhLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.BlazorServer/Pages/Index.razor]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvSW5kZXgucmF6b3I=
+[C:/Users/tomec/OneDrive/Pulpit/STUDIA/MGR_2SEMESTR/programowanie aplikacji/FirmaKurierska/FirmaKurierska.BlazorServer/Pages/Index.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.BlazorServer/Shared/SurveyPrompt.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL1N1cnZleVByb21wdC5yYXpvcg==
+[C:/Users/tomec/OneDrive/Pulpit/STUDIA/MGR_2SEMESTR/programowanie aplikacji/FirmaKurierska/FirmaKurierska.BlazorServer/Shared/SurveyPrompt.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXFN1cnZleVByb21wdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.BlazorServer/_Imports.razor]
+[C:/Users/tomec/OneDrive/Pulpit/STUDIA/MGR_2SEMESTR/programowanie aplikacji/FirmaKurierska/FirmaKurierska.BlazorServer/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.BlazorServer/Shared/MainLayout.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL01haW5MYXlvdXQucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-afnimu9pyy
+[C:/Users/tomec/OneDrive/Pulpit/STUDIA/MGR_2SEMESTR/programowanie aplikacji/FirmaKurierska/FirmaKurierska.BlazorServer/Shared/MainLayout.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-qyivi377kc
 
-[/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.BlazorServer/Shared/NavMenu.razor]
-build_metadata.AdditionalFiles.TargetPath = U2hhcmVkL05hdk1lbnUucmF6b3I=
-build_metadata.AdditionalFiles.CssScope = b-mxhiw9jscx
+[C:/Users/tomec/OneDrive/Pulpit/STUDIA/MGR_2SEMESTR/programowanie aplikacji/FirmaKurierska/FirmaKurierska.BlazorServer/Shared/NavMenu.razor]
+build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE5hdk1lbnUucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = b-m29p4yl8q7
 
-[/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.BlazorServer/Pages/Error.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvRXJyb3IuY3NodG1s
+[C:/Users/tomec/OneDrive/Pulpit/STUDIA/MGR_2SEMESTR/programowanie aplikacji/FirmaKurierska/FirmaKurierska.BlazorServer/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.BlazorServer/Pages/_Host.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0hvc3QuY3NodG1s
+[C:/Users/tomec/OneDrive/Pulpit/STUDIA/MGR_2SEMESTR/programowanie aplikacji/FirmaKurierska/FirmaKurierska.BlazorServer/Pages/_Host.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.BlazorServer/Pages/_Layout.cshtml]
-build_metadata.AdditionalFiles.TargetPath = UGFnZXMvX0xheW91dC5jc2h0bWw=
+[C:/Users/tomec/OneDrive/Pulpit/STUDIA/MGR_2SEMESTR/programowanie aplikacji/FirmaKurierska/FirmaKurierska.BlazorServer/Pages/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

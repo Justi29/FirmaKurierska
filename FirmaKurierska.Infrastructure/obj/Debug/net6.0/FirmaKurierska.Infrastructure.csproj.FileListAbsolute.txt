@@ -3,3 +3,21 @@ C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/
 C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/FirmaKurierska.Infrastructure/obj/Debug/net6.0/FirmaKurierska.Infrastructure.AssemblyInfoInputs.cache
 C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/FirmaKurierska.Infrastructure/obj/Debug/net6.0/FirmaKurierska.Infrastructure.AssemblyInfo.cs
 C:/Users/adapo/Desktop/JUSTI/Programowanie Aplikacji Biznesowych/FirmaKurierska/FirmaKurierska.Infrastructure/obj/Debug/net6.0/FirmaKurierska.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.Infrastructure.deps.json
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.Infrastructure.dll
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.Infrastructure.pdb
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.Application.dll
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.Domain.dll
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.Application.pdb
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.Domain.pdb
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\FirmaKurierska.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\FirmaKurierska.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\FirmaKurierska.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\FirmaKurierska.Infrastructure.AssemblyInfo.cs
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\FirmaKurierska.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\FirmaKurierska.Infrastructure.sourcelink.json
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\FirmaKurierska.Infrastructure.csproj.CopyComplete
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\FirmaKurierska.Infrastructure.dll
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\refint\FirmaKurierska.Infrastructure.dll
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\FirmaKurierska.Infrastructure.pdb
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\ref\FirmaKurierska.Infrastructure.dll

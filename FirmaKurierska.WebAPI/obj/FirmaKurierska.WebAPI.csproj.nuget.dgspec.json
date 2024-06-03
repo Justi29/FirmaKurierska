@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.WebAPI/FirmaKurierska.WebAPI.csproj": {}
+    "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.WebAPI\\FirmaKurierska.WebAPI.csproj": {}
   },
   "projects": {
-    "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Application/FirmaKurierska.Application.csproj": {
+    "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Application\\FirmaKurierska.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Application/FirmaKurierska.Application.csproj",
+        "projectUniqueName": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Application\\FirmaKurierska.Application.csproj",
         "projectName": "FirmaKurierska.Application",
-        "projectPath": "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Application/FirmaKurierska.Application.csproj",
-        "packagesPath": "/Users/justi/.nuget/packages/",
-        "outputPath": "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Application/obj/",
+        "projectPath": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Application\\FirmaKurierska.Application.csproj",
+        "packagesPath": "C:\\Users\\tomec\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/justi/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\tomec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Domain/FirmaKurierska.Domain.csproj": {
-                "projectPath": "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Domain/FirmaKurierska.Domain.csproj"
+              "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Domain\\FirmaKurierska.Domain.csproj": {
+                "projectPath": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Domain\\FirmaKurierska.Domain.csproj"
               }
             }
           }
@@ -71,26 +77,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Domain/FirmaKurierska.Domain.csproj": {
+    "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Domain\\FirmaKurierska.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Domain/FirmaKurierska.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Domain\\FirmaKurierska.Domain.csproj",
         "projectName": "FirmaKurierska.Domain",
-        "projectPath": "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Domain/FirmaKurierska.Domain.csproj",
-        "packagesPath": "/Users/justi/.nuget/packages/",
-        "outputPath": "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Domain/obj/",
+        "projectPath": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Domain\\FirmaKurierska.Domain.csproj",
+        "packagesPath": "C:\\Users\\tomec\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/justi/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\tomec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -124,34 +136,40 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Infrastructure/FirmaKurierska.Infrastructure.csproj": {
+    "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Infrastructure\\FirmaKurierska.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Infrastructure/FirmaKurierska.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Infrastructure\\FirmaKurierska.Infrastructure.csproj",
         "projectName": "FirmaKurierska.Infrastructure",
-        "projectPath": "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Infrastructure/FirmaKurierska.Infrastructure.csproj",
-        "packagesPath": "/Users/justi/.nuget/packages/",
-        "outputPath": "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Infrastructure/obj/",
+        "projectPath": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Infrastructure\\FirmaKurierska.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\tomec\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/justi/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\tomec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Application/FirmaKurierska.Application.csproj": {
-                "projectPath": "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Application/FirmaKurierska.Application.csproj"
+              "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Application\\FirmaKurierska.Application.csproj": {
+                "projectPath": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Application\\FirmaKurierska.Application.csproj"
               }
             }
           }
@@ -191,38 +209,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.WebAPI/FirmaKurierska.WebAPI.csproj": {
+    "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.WebAPI\\FirmaKurierska.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.WebAPI/FirmaKurierska.WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.WebAPI\\FirmaKurierska.WebAPI.csproj",
         "projectName": "FirmaKurierska.WebAPI",
-        "projectPath": "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.WebAPI/FirmaKurierska.WebAPI.csproj",
-        "packagesPath": "/Users/justi/.nuget/packages/",
-        "outputPath": "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.WebAPI/obj/",
+        "projectPath": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.WebAPI\\FirmaKurierska.WebAPI.csproj",
+        "packagesPath": "C:\\Users\\tomec\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.WebAPI\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/justi/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\tomec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "/usr/local/share/dotnet/sdk/7.0.309/Sdks/Microsoft.NET.Sdk.Web/library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Application/FirmaKurierska.Application.csproj": {
-                "projectPath": "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Application/FirmaKurierska.Application.csproj"
+              "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Application\\FirmaKurierska.Application.csproj": {
+                "projectPath": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Application\\FirmaKurierska.Application.csproj"
               },
-              "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Infrastructure/FirmaKurierska.Infrastructure.csproj": {
-                "projectPath": "/Users/justi/Desktop/PAB/FirmaKurierska/FirmaKurierska.Infrastructure/FirmaKurierska.Infrastructure.csproj"
+              "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Infrastructure\\FirmaKurierska.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Infrastructure\\FirmaKurierska.Infrastructure.csproj"
               }
             }
           }
@@ -255,7 +278,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.309/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
