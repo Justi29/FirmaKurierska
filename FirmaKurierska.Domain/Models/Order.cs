@@ -4,7 +4,7 @@
     {
         Small,
         Medium,
-        Big
+        Large
     }
 
     public enum OrderStatus
@@ -24,14 +24,11 @@
         public decimal TotalCost { get; set; }
         public Address PickupLocation { get; set; }
         public Address Destination { get; set; }
-        public string ContactPhone { get; set; }
         public DateTime ShippingDate { get; set; }
         public DateTime? PickupDate { get; set; } 
         public DateTime? DeliveryDate { get; set; }
         public int ClientId { get; set; }
-        public Client Client { get; set; }
         public int CourierId { get; set; }
-        public Courier Courier { get; set; }
     }
 }
 

@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq.Expressions;
 
-namespace SaleKiosk.Domain.Contracts
+namespace FirmaKurierska.Domain.Contracts
 {
     // interfejs repozytorium generycznego
     public interface IRepository<TEntity> where TEntity : class
