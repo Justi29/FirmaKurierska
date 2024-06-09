@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-
-namespace FirmaKurierska.Domain.Models
+﻿namespace FirmaKurierska.Domain.Models
 {
     public class Courier
     {
