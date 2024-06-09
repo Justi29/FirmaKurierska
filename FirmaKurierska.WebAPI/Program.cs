@@ -1,4 +1,5 @@
 ﻿using FirmaKurierska.Application.Dto;
+using FirmaKurierska.Application.Services;
 using FirmaKurierska.Domain.Contracts;
 using FirmaKurierska.Infrastructure.Repositories;
 using FirmaKurierska.Infrastructure;
@@ -25,9 +26,9 @@ builder.Services.AddAutoMapper(typeof(FirmaKurierskaMappingProfile));
 builder.Services.AddFluentValidationAutoValidation();
 
 // rejestracja kontekstu bazy w kontenerze IoC
-//var sqliteConnectionString = "Data Source=Kiosk.WebAPI.Logger.db";
-//builder.Services.AddDbContext<KioskDbContext>(options =>
-//    options.UseSqlite(sqliteConnectionString));
+var sqliteConnectionString = "Data Source=FirmaKurierska.WebAPI.db";
+builder.Services.AddDbContext<KioskDbContext>(options =>
+    options.UseSqlite(sqliteConnectionString));
 
 builder.Services.AddScoped<IKioskUnitOfWork, KioskUnitOfWork>();
 builder.Services.AddScoped<IClientRepository, ClientRepository>();
@@ -35,6 +36,10 @@ builder.Services.AddScoped<ICourierRepository, CourierRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IAddressRepository, AddressRepository>();
 builder.Services.AddScoped<DataSeeder>();
+builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<IClientService, ClientService>();
+builder.Services.AddScoped<ICourierService, CourierService>();
+builder.Services.AddScoped<IAddressService, AddressService>();
 builder.Services.AddScoped<ExceptionMiddleware>();
 
 // rejestruje w kontenerze zależności politykę CORS o nazwie FirmaKurierska,
