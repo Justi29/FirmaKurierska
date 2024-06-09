@@ -1,10 +1,12 @@
-﻿using FirmaKurierska.Application.Dto;
+﻿using AutoMapper;
+using FirmaKurierska.Application.Dto;
+using FirmaKurierska.Domain.Models;
 
 namespace FirmaKurierska.Application.Mappings
 {
-    public class KioskMappingProfile : Profile
+    public class FirmaKurierskaMappingProfile : Profile
     {
-        public KioskMappingProfile()
+        public FirmaKurierskaMappingProfile()
         {
             CreateMap<Client, ClientDto>();
             CreateMap<Courier, CourierDto>();

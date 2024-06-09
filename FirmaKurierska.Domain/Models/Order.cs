@@ -21,7 +21,7 @@
         public int Id { get; set; }
         public OrderStatus Status { get; set; }
         public OrderSize Size { get; set; }
-        public decimal TotalCost { get; set; }
+        public double TotalCost { get; set; }
         public Address PickupLocation { get; set; }
         public Address Destination { get; set; }
         public DateTime ShippingDate { get; set; }

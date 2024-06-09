@@ -29,7 +29,7 @@ namespace FirmaKurierska.Infrastructure
                             Surname = "Dymel",
                             Email = "jodymel@gmail.com",
                             PhoneNumber = "222333444",
-                            IsCompany = True,
+                            IsCompany = true,
                             NIP = "9876543210",
                         },
                         new Client()
@@ -39,7 +39,7 @@ namespace FirmaKurierska.Infrastructure
                             Surname = "Nowak",
                             Email = "jnowak@gmail.com",
                             PhoneNumber = "555666777",
-                            IsCompany = False,
+                            IsCompany = false,
                             NIP = null,
                         },
 
@@ -99,7 +99,7 @@ namespace FirmaKurierska.Infrastructure
                             Status = OrderStatus.Delivered,
                             Size = OrderSize.Large,
                             TotalCost = 25.00,
-                            PickupLocation = new Address { Street = "ul. Jagiełły 20/4", City = "Warszawa", Country = "Poland", PostCode = "33-450" }
+                            PickupLocation = new Address { Street = "ul. Jagiełły 20/4", City = "Warszawa", Country = "Poland", PostCode = "33-450" },
                             Destination = new Address { Street = "ul. Warszawska 55", City = "Warszawa", Country = "Poland", PostCode = "33-400" },
                             ShippingDate = new DateTime(2024, 6, 10),
                             PickupDate = new DateTime(2024, 6, 11),
@@ -123,7 +123,7 @@ namespace FirmaKurierska.Infrastructure
                             City = "Warszawa",
                             Country = "Poland",
                             PostCode = "33-450",
-                        }
+                        },
                         new Address()
                         {
                             Id = 2,
@@ -132,7 +132,6 @@ namespace FirmaKurierska.Infrastructure
                             Country = "Poland",
                             PostCode = "33-400",
                         },
-
                     };
                     _dbContext.Addresses.AddRange(addresses);
                     _dbContext.SaveChanges();
