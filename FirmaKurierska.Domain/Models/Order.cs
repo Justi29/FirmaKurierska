@@ -9,11 +9,9 @@
 
     public enum OrderStatus
     {
-        Submitted,
         ReadyForPickup,
         OutForDelivery,
         Delivered,
-        Cancelled
     }
 
     public class Order
@@ -28,7 +26,7 @@
         public DateTime? PickupDate { get; set; } 
         public DateTime? DeliveryDate { get; set; }
         public int ClientId { get; set; }
-        public int CourierId { get; set; }
+        public int? CourierId { get; set; }
     }
 }
 

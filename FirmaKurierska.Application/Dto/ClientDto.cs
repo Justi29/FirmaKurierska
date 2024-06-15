@@ -12,9 +12,6 @@ namespace FirmaKurierska.Application.Dto
         public string Email { get; set; }
         public bool IsCompany { get; set; }
         public string NIP { get; set; }
-
-        public ICollection<Order> Orders { get; set; }
-        public ICollection<Address> Addresses { get; set; }
     }
 }
 

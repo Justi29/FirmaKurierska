@@ -8,11 +8,13 @@ namespace FirmaKurierska.Application.Mappings
     {
         public FirmaKurierskaMappingProfile()
         {
-            CreateMap<Client, ClientDto>();
+            CreateMap<Client, ClientDto>().ReverseMap();
             CreateMap<Courier, CourierDto>();
-            CreateMap<Address, AddressDto>();
+            CreateMap<Address, AddressDto>().ReverseMap();
             CreateMap<Order, OrderDto>();
-
+            CreateMap<CreateOrderDto, Order>()
+                .ForMember(dest => dest.PickupLocation, opt => opt.MapFrom(src => src.PickupLocation))
+                .ForMember(dest => dest.Destination, opt => opt.MapFrom(src => src.Destination)); ;
         }
     }
 }

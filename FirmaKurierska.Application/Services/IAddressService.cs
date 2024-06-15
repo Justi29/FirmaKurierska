@@ -7,6 +7,8 @@ namespace FirmaKurierska.Application.Services
         List<AddressDto> GetAll();
         AddressDto GetById(int id);
         void Delete(int id);
+        int Create(AddressDto dto);
+        void Update(UpdateAddressDto dto);
     }
 }
 

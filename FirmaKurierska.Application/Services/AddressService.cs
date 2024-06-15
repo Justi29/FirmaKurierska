@@ -2,6 +2,8 @@
 using FirmaKurierska.Application.Dto;
 using FirmaKurierska.Domain.Contracts;
 using FirmaKurierska.Domain.Exceptions;
+using FirmaKurierska.Domain.Models;
+using System.Diagnostics;
 
 namespace FirmaKurierska.Application.Services
 {
@@ -14,6 +16,22 @@ namespace FirmaKurierska.Application.Services
         {
             this._uow = unitOfWork;
             this._mapper = mapper;
+        }
+        public int Create(AddressDto dto)
+        {
+            if (dto == null)
+            {
+                throw new BadRequestException("Adress is null");
+            }
+
+            var id = _uow.AddressRepository.GetMaxId() + 1;
+            var adress = _mapper.Map<Address>(dto);
+            adress.Id = id;
+
+            _uow.AddressRepository.Insert(adress);
+            _uow.Commit();
+
+            return id;
         }
 
         public void Delete(int id)
@@ -30,9 +48,17 @@ namespace FirmaKurierska.Application.Services
 
         public List<AddressDto> GetAll()
         {
-            var addresss = _uow.AddressRepository.GetAll();
+            var address = _uow.AddressRepository.GetAll();
 
-            List<AddressDto> result = _mapper.Map<List<AddressDto>>(addresss);
+            List<AddressDto> result = _mapper.Map<List<AddressDto>>(address);
+            return result;
+        }
+
+        public List<AddressDto> GetAllForClient(int clientId)
+        {
+            var address = _uow.AddressRepository.Find(a => a.ClientId == clientId);
+
+            List<AddressDto> result = _mapper.Map<List<AddressDto>>(address);
             return result;
         }
 
@@ -51,6 +77,28 @@ namespace FirmaKurierska.Application.Services
 
             var result = _mapper.Map<AddressDto>(address);
             return result;
+        }
+
+        public void Update(UpdateAddressDto dto)
+        {
+            if (dto == null)
+            {
+                throw new BadRequestException("No order data");
+            }
+
+            var address = _uow.AddressRepository.Get(dto.Id);
+            if (address == null)
+            {
+                throw new NotFoundException("Order not found");
+            }
+
+            address.Id = dto.Id;
+            address.Country = dto.Country;
+            address.City = dto.City;
+            address.PostCode = dto.PostCode;
+            address.Street = dto.Street;
+
+            _uow.Commit();
         }
     }
 }

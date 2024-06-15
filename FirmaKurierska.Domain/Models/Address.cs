@@ -8,6 +8,8 @@
         public string PostCode { get; set; }
         public string Street { get; set; }
 
+        public int? ClientId { get; set; }
+
         //public ICollection<Client> Clients { get; set; }
     }
 

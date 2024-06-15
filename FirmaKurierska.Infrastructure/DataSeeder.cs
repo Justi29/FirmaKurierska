@@ -84,8 +84,8 @@ namespace FirmaKurierska.Infrastructure
                             Status = OrderStatus.Delivered,
                             Size = OrderSize.Medium,
                             TotalCost = 150.00,
-                            PickupLocation = new Address { Street = "ul. Krakowska 20/4", City = "Kraków", Country = "Poland", PostCode = "33-240" },
-                            Destination = new Address { Street = "ul. Na błonie 33", City = "Kraków", Country = "Poland", PostCode = "30-233" },
+                            PickupLocation = new Address { Street = "ul. Krakowska 20/4", City = "Kraków", Country = "Poland", PostCode = "33-240", ClientId = 2 },
+                            Destination = new Address { Street = "ul. Na błonie 33", City = "Kraków", Country = "Poland", PostCode = "30-233", ClientId = 2 },
                             ShippingDate = new DateTime(2024, 6, 15),
                             PickupDate = new DateTime(2024, 6, 16),
                             DeliveryDate = new DateTime(2024, 6, 17),
@@ -99,7 +99,7 @@ namespace FirmaKurierska.Infrastructure
                             Status = OrderStatus.Delivered,
                             Size = OrderSize.Large,
                             TotalCost = 25.00,
-                            PickupLocation = new Address { Street = "ul. Jagiełły 20/4", City = "Warszawa", Country = "Poland", PostCode = "33-450" },
+                            PickupLocation = new Address { Street = "ul. Jagiełły 20/4", City = "Warszawa", Country = "Poland", PostCode = "33-450", ClientId=1 },
                             Destination = new Address { Street = "ul. Warszawska 55", City = "Warszawa", Country = "Poland", PostCode = "33-400" },
                             ShippingDate = new DateTime(2024, 6, 10),
                             PickupDate = new DateTime(2024, 6, 11),
@@ -123,6 +123,7 @@ namespace FirmaKurierska.Infrastructure
                             City = "Warszawa",
                             Country = "Poland",
                             PostCode = "33-450",
+                            ClientId = 2
                         },
                         new Address()
                         {
@@ -131,6 +132,7 @@ namespace FirmaKurierska.Infrastructure
                             City = "Warszawa",
                             Country = "Poland",
                             PostCode = "33-400",
+                            ClientId = 1
                         },
                     };
                     _dbContext.Addresses.AddRange(addresses);

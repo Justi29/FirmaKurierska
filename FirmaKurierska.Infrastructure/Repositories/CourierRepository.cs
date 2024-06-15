@@ -12,5 +12,10 @@ namespace FirmaKurierska.Infrastructure.Repositories
         {
             _kioskDbContext = context;
         }
+
+        public int GetMaxId()
+        {
+            return _kioskDbContext.Couriers.Max(x => x.Id);
+        }
     }
 }

@@ -2,6 +2,7 @@
 using FirmaKurierska.Application.Dto;
 using FirmaKurierska.Domain.Contracts;
 using FirmaKurierska.Domain.Exceptions;
+using FirmaKurierska.Domain.Models;
 
 namespace FirmaKurierska.Application.Services
 {
@@ -14,6 +15,23 @@ namespace FirmaKurierska.Application.Services
         {
             this._uow = unitOfWork;
             this._mapper = mapper;
+        }
+
+        public int Create(CourierDto dto)
+        {
+            if (dto == null)
+            {
+                throw new BadRequestException("Courier is null");
+            }
+
+            var id = _uow.CourierRepository.GetMaxId() + 1;
+            var courier = _mapper.Map<Courier>(dto);
+            courier.Id = id;
+
+            _uow.CourierRepository.Insert(courier);
+            _uow.Commit();
+
+            return id;
         }
 
         public void Delete(int id)
@@ -51,6 +69,28 @@ namespace FirmaKurierska.Application.Services
 
             var result = _mapper.Map<CourierDto>(courier);
             return result;
+        }
+
+        public void Update(CourierDto dto)
+        {
+            if (dto == null)
+            {
+                throw new BadRequestException("No courier data");
+            }
+
+            var courier = _uow.CourierRepository.Get(dto.Id);
+            if (courier == null)
+            {
+                throw new NotFoundException("Courier not found");
+            }
+
+            courier.Id = dto.Id;
+            courier.Name = dto.Name;
+            courier.Surname = dto.Surname;
+            courier.PhoneNumber = dto.PhoneNumber;
+            courier.Email = dto.Email;
+
+            _uow.Commit();
         }
     }
 }

@@ -26,6 +26,19 @@ namespace FirmaKurierska.WebAPI.Controllers
             return Ok(result);
         }
 
+        [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult Create([FromBody] CourierDto dto)
+        {
+            var id = _courierService.Create(dto);
+
+            //_logger.LogDebug($"Utworzono nowe zamówienie z id = {id}");
+            var actionName = nameof(Get);
+            var routeValues = new { id };
+            return CreatedAtAction(actionName, routeValues, null);
+        }
+
         [HttpGet("{id}", Name = "GetCourier")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -43,6 +56,22 @@ namespace FirmaKurierska.WebAPI.Controllers
         public ActionResult Delete(int id)
         {
             _courierService.Delete(id);
+            return NoContent();
+        }
+
+        [HttpPut("{id}")]
+        [ProducesResponseType(StatusCodes.Status204NoContent)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult Update(int id, [FromBody] CourierDto dto)
+        {
+            if (id != dto.Id)
+            {
+                throw new BadRequestException("Id param is not valid");
+            }
+
+            _courierService.Update(dto);
+            //_logger.LogDebug($"Zaktualizowano zamówienie z id = {id}");
             return NoContent();
         }
     }

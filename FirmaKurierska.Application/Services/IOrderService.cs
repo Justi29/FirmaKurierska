@@ -6,8 +6,10 @@ namespace FirmaKurierska.Application.Services
     {
         List<OrderDto> GetAll();
         OrderDto GetById(int id);
-        //int Create(CreateOrderDto dto);
-        //void Update(UpdateOrderDto dto);
+        int Create(CreateOrderDto dto);
+        List<OrderDto> GetAllForClient(int clientId);
+        List<OrderDto> GetAllForCourier(int courierId);
+        void Update(UpdateOrderDto dto);
         void Delete(int id);
     }
 }

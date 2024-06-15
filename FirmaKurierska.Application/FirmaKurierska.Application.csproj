@@ -23,7 +23,6 @@
 	  <None Remove="Validators\" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Folder Include="Dto\" />
 	  <Folder Include="Services\" />
 	  <Folder Include="Mappings\" />
 	  <Folder Include="Validators\" />
