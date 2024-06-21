@@ -3,6 +3,7 @@ using FirmaKurierska.Application.Dto;
 using FirmaKurierska.Domain.Contracts;
 using FirmaKurierska.Domain.Exceptions;
 using FirmaKurierska.Domain.Models;
+using FirmaKurierska.WebAPI.Utils;
 
 namespace FirmaKurierska.Application.Services
 {
@@ -134,16 +135,7 @@ namespace FirmaKurierska.Application.Services
                 throw new NotFoundException("Order not found");
             }
 
-            order.Id = dto.Id;
-            order.Status = dto.Status;
-            order.Size = dto.Size;
-            order.TotalCost = dto.TotalCost;
-            order.PickupLocation = _mapper.Map<Address>(dto.PickupLocation);
-            order.Destination = _mapper.Map<Address>(dto.Destination);
-            order.ShippingDate = dto.ShippingDate;
-            order.PickupDate = dto.PickupDate;
-            order.DeliveryDate = dto.DeliveryDate;
-            order.CourierId = dto.CourierId;
+            PropertyUpdater.UpdateProperties(order, dto);
 
             _uow.Commit();
         }

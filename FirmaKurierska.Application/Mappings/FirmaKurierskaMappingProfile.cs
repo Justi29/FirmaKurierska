@@ -9,7 +9,7 @@ namespace FirmaKurierska.Application.Mappings
         public FirmaKurierskaMappingProfile()
         {
             CreateMap<Client, ClientDto>().ReverseMap();
-            CreateMap<Courier, CourierDto>();
+            CreateMap<Courier, CourierDto>().ReverseMap();
             CreateMap<Address, AddressDto>().ReverseMap();
             CreateMap<Order, OrderDto>();
             CreateMap<CreateOrderDto, Order>()

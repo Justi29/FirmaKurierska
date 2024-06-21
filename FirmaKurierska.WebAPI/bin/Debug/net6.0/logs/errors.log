@@ -1,0 +1,166 @@
+2024-06-21 15:28:23.3631 ERROR Id param is not valid FirmaKurierska.Domain.Exceptions.BadRequestException: Id param is not valid
+   at FirmaKurierska.WebAPI.Controllers.AddressController.Update(Int32 id, UpdateAddressDto dto) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.WebAPI\Controllers\AddressController.cs:line 60
+   at lambda_method305(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FirmaKurierska.WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.WebAPI\Middleware\ExceptionMiddleware.cs:line 18    at FirmaKurierska.WebAPI.Controllers.AddressController.Update(Int32 id, UpdateAddressDto dto) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.WebAPI\Controllers\AddressController.cs:line 60
+   at lambda_method305(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FirmaKurierska.WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.WebAPI\Middleware\ExceptionMiddleware.cs:line 18
+2024-06-21 15:29:55.6129 ERROR Client not found FirmaKurierska.Domain.Exceptions.NotFoundException: Client not found
+   at FirmaKurierska.Application.Services.ClientService.GetById(Int32 id) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Application\Services\ClientService.cs:line 68
+   at FirmaKurierska.WebAPI.Controllers.ClientController.Delete(Int32 id) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.WebAPI\Controllers\ClientController.cs:line 70
+   at lambda_method332(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FirmaKurierska.WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.WebAPI\Middleware\ExceptionMiddleware.cs:line 18    at FirmaKurierska.Application.Services.ClientService.GetById(Int32 id) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Application\Services\ClientService.cs:line 68
+   at FirmaKurierska.WebAPI.Controllers.ClientController.Delete(Int32 id) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.WebAPI\Controllers\ClientController.cs:line 70
+   at lambda_method332(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FirmaKurierska.WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.WebAPI\Middleware\ExceptionMiddleware.cs:line 18
+2024-06-21 15:30:38.4347 ERROR Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CourierDto -> Courier
+FirmaKurierska.Application.Dto.CourierDto -> FirmaKurierska.Domain.Models.Courier AutoMapper.AutoMapperMappingException: Missing type map configuration or unsupported mapping.
+
+Mapping types:
+CourierDto -> Courier
+FirmaKurierska.Application.Dto.CourierDto -> FirmaKurierska.Domain.Models.Courier
+   at lambda_method343(Closure , Object , Courier , ResolutionContext )
+   at FirmaKurierska.Application.Services.CourierService.Create(CourierDto dto) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Application\Services\CourierService.cs:line 28
+   at FirmaKurierska.WebAPI.Controllers.CourierController.Create(CourierDto dto) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.WebAPI\Controllers\CourierController.cs:line 39
+   at lambda_method339(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FirmaKurierska.WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.WebAPI\Middleware\ExceptionMiddleware.cs:line 18    at lambda_method343(Closure , Object , Courier , ResolutionContext )
+   at FirmaKurierska.Application.Services.CourierService.Create(CourierDto dto) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Application\Services\CourierService.cs:line 28
+   at FirmaKurierska.WebAPI.Controllers.CourierController.Create(CourierDto dto) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.WebAPI\Controllers\CourierController.cs:line 39
+   at lambda_method339(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FirmaKurierska.WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.WebAPI\Middleware\ExceptionMiddleware.cs:line 18
+2024-06-21 15:36:16.9967 ERROR Id param is not valid FirmaKurierska.Domain.Exceptions.BadRequestException: Id param is not valid
+   at FirmaKurierska.WebAPI.Controllers.OrderController.Update(Int32 id, UpdateOrderDto dto) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.WebAPI\Controllers\OrderController.cs:line 101
+   at lambda_method326(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FirmaKurierska.WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.WebAPI\Middleware\ExceptionMiddleware.cs:line 18    at FirmaKurierska.WebAPI.Controllers.OrderController.Update(Int32 id, UpdateOrderDto dto) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.WebAPI\Controllers\OrderController.cs:line 101
+   at lambda_method326(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FirmaKurierska.WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.WebAPI\Middleware\ExceptionMiddleware.cs:line 18
+2024-06-21 15:43:26.9628 ERROR Client does not exist FirmaKurierska.Domain.Exceptions.BadRequestException: Client does not exist
+   at FirmaKurierska.Application.Services.OrderService.Create(CreateOrderDto dto) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Application\Services\OrderService.cs:line 33
+   at FirmaKurierska.WebAPI.Controllers.OrderController.Create(CreateOrderDto dto) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.WebAPI\Controllers\OrderController.cs:line 72
+   at lambda_method337(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FirmaKurierska.WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.WebAPI\Middleware\ExceptionMiddleware.cs:line 18    at FirmaKurierska.Application.Services.OrderService.Create(CreateOrderDto dto) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Application\Services\OrderService.cs:line 33
+   at FirmaKurierska.WebAPI.Controllers.OrderController.Create(CreateOrderDto dto) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.WebAPI\Controllers\OrderController.cs:line 72
+   at lambda_method337(Closure , Object , Object[] )
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at FirmaKurierska.WebAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context, RequestDelegate next) in C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.WebAPI\Middleware\ExceptionMiddleware.cs:line 18

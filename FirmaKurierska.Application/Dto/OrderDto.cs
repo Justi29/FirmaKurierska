@@ -5,6 +5,7 @@ namespace FirmaKurierska.Application.Dto
 
     public class OrderDto
     {
+        public int Id { get; set; }
         public OrderStatus Status { get; set; }
         public OrderSize Size { get; set; }
         public decimal TotalCost { get; set; }
