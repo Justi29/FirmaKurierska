@@ -1,0 +1,54 @@
+﻿@page "/courier"
+@inject ICourierService _courierService
+@inject IJSRuntime _js
+<PageTitle>Courier list</PageTitle>
+<h1>Courier list</h1>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>PhoneNumber</th>
+                <th>Email</th>
+                <th>Action</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var c in _courierList)
+            {
+                <tr>
+                    <td>@c.Id</td>
+                    <td>@c.Name</td>
+                    <td>@c.Surname</td>
+                    <td>@c.PhoneNumber</td>
+                    <td>@c.Email</td>
+                    <td>
+                        <button class="btn bg-danger" @onclick="()=>DeleteCourier(c.Id)"> Delete </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+@code {
+    private List<CourierDto> _courierList = null;
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        _courierList = _courierService.GetAll();
+    }
+    protected async Task DeleteCourier(int id)
+    {
+        var courier = _courierList.First(q => q.Id == id);
+        var confirm = await _js.InvokeAsync<bool>("confirm", $"Are You Sure You Want To Delete courier {courier.Name} {courier.Surname}?");
+        if (confirm)
+        {
+            _courierService.Delete(id);
+            OnInitialized();
+        }
+    }
+} 

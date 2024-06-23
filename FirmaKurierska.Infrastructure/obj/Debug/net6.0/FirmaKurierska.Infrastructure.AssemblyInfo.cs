@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FirmaKurierska.Infrastructure")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d3544809c80604b68ceda31fbbf361e0431aa05")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b18e093ed0fd3b8507c4587386caec7643c395c")]
 [assembly: System.Reflection.AssemblyProductAttribute("FirmaKurierska.Infrastructure")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FirmaKurierska.Infrastructure")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

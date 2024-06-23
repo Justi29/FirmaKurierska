@@ -14,6 +14,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\FirmaKurierska.Domain\FirmaKurierska.Domain.csproj" />
+		<ProjectReference Include="..\FirmaKurierska.SharedKernel\FirmaKurierska.SharedKernel.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

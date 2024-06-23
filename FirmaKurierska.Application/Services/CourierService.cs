@@ -1,5 +1,5 @@
 ﻿using AutoMapper;
-using FirmaKurierska.Application.Dto;
+using FirmaKurierska.SharedKernel.Dto;
 using FirmaKurierska.Domain.Contracts;
 using FirmaKurierska.Domain.Exceptions;
 using FirmaKurierska.Domain.Models;

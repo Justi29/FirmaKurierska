@@ -639,6 +639,7 @@
         "dependencies": {
           "AutoMapper": "13.0.1",
           "FirmaKurierska.Domain": "1.0.0",
+          "FirmaKurierska.SharedKernel": "1.0.0",
           "FluentValidation.AspNetCore": "11.3.0",
           "NLog.Web.AspNetCore": "5.3.10"
         },
@@ -657,6 +658,19 @@
         },
         "runtime": {
           "bin/placeholder/FirmaKurierska.Domain.dll": {}
+        }
+      },
+      "FirmaKurierska.SharedKernel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FirmaKurierska.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FirmaKurierska.SharedKernel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FirmaKurierska.SharedKernel.dll": {}
         }
       }
     }
@@ -1481,33 +1495,39 @@
       "type": "project",
       "path": "../FirmaKurierska.Domain/FirmaKurierska.Domain.csproj",
       "msbuildProject": "../FirmaKurierska.Domain/FirmaKurierska.Domain.csproj"
+    },
+    "FirmaKurierska.SharedKernel/1.0.0": {
+      "type": "project",
+      "path": "../FirmaKurierska.SharedKernel/FirmaKurierska.SharedKernel.csproj",
+      "msbuildProject": "../FirmaKurierska.SharedKernel/FirmaKurierska.SharedKernel.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "FirmaKurierska.Application >= 1.0.0",
+      "FirmaKurierska.SharedKernel >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 7.0.18",
       "Microsoft.EntityFrameworkCore.Sqlite >= 7.0.18"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\tomec\\.nuget\\packages\\": {},
+    "C:\\Users\\AWA5\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Infrastructure\\FirmaKurierska.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.Infrastructure\\FirmaKurierska.Infrastructure.csproj",
       "projectName": "FirmaKurierska.Infrastructure",
-      "projectPath": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Infrastructure\\FirmaKurierska.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\tomec\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Infrastructure\\obj\\",
+      "projectPath": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.Infrastructure\\FirmaKurierska.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\AWA5\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\tomec\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\AWA5\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1522,8 +1542,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Application\\FirmaKurierska.Application.csproj": {
-              "projectPath": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Application\\FirmaKurierska.Application.csproj"
+            "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.Application\\FirmaKurierska.Application.csproj": {
+              "projectPath": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.Application\\FirmaKurierska.Application.csproj"
+            },
+            "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.SharedKernel\\FirmaKurierska.SharedKernel.csproj": {
+              "projectPath": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.SharedKernel\\FirmaKurierska.SharedKernel.csproj"
             }
           }
         }
@@ -1558,6 +1581,20 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.AspNetCore.App.Ref",
+            "version": "[6.0.25, 6.0.25]"
+          },
+          {
+            "name": "Microsoft.NETCore.App.Ref",
+            "version": "[6.0.25, 6.0.25]"
+          },
+          {
+            "name": "Microsoft.WindowsDesktop.App.Ref",
+            "version": "[6.0.25, 6.0.25]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"

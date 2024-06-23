@@ -23,6 +23,7 @@
     <ProjectReference Include="..\FirmaKurierska.Infrastructure\FirmaKurierska.Infrastructure.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+    <ProjectReference Include="..\FirmaKurierska.SharedKernel\FirmaKurierska.SharedKernel.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />

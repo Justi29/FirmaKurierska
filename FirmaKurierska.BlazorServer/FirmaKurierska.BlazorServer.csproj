@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
@@ -7,8 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FirmaKurierska.Application\FirmaKurierska.Application.csproj" />
     <ProjectReference Include="..\FirmaKurierska.Infrastructure\FirmaKurierska.Infrastructure.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+    <ProjectReference Include="..\FirmaKurierska.SharedKernel\FirmaKurierska.SharedKernel.csproj" />
   </ItemGroup>
 </Project>

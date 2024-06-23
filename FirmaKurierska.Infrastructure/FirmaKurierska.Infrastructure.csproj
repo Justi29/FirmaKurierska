@@ -13,6 +13,7 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\FirmaKurierska.Application\FirmaKurierska.Application.csproj" />
+		<ProjectReference Include="..\FirmaKurierska.SharedKernel\FirmaKurierska.SharedKernel.csproj" />
 	</ItemGroup>
 
 	<ItemGroup>

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using FirmaKurierska.Application.Services;
 using FirmaKurierska.Domain.Exceptions;
-using FirmaKurierska.Application.Dto;
+using FirmaKurierska.SharedKernel.Dto;
 using Microsoft.Extensions.Logging;
 
 namespace FirmaKurierska.WebAPI.Controllers
