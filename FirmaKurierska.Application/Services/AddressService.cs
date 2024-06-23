@@ -54,6 +54,7 @@ namespace FirmaKurierska.Application.Services
             return result;
         }
 
+
         public List<AddressDto> GetAllForClient(int clientId)
         {
             var address = _uow.AddressRepository.Find(a => a.ClientId == clientId);

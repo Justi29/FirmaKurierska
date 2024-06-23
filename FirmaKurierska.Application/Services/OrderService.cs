@@ -32,9 +32,10 @@ namespace FirmaKurierska.Application.Services
             {
                 throw new BadRequestException("Client does not exist");
             }
+            Address destination = null;
             if (dto.Destination.Id == null)
             {
-                var destination = new Address
+                destination = new Address
                 {
                     Id = _uow.AddressRepository.GetMaxId() + 1,
                     Street = dto.Destination.Street,
@@ -43,11 +44,16 @@ namespace FirmaKurierska.Application.Services
                     PostCode = dto.Destination.PostCode,
                     ClientId = dto.ClientId
                 };
-                dto.Destination = _mapper.Map<AddressDto>(destination);
+            } 
+            else
+            {
+                destination = _uow.AddressRepository.Get((int)dto.Destination.Id);
             }
+
+            Address pickupLocation = null;
             if (dto.PickupLocation.Id == null)
             {
-                var pickupLocation = new Address
+                pickupLocation = new Address
                 {
                     Id = _uow.AddressRepository.GetMaxId() + 1,
                     Street = dto.PickupLocation.Street,
@@ -56,7 +62,14 @@ namespace FirmaKurierska.Application.Services
                     PostCode = dto.PickupLocation.PostCode,
                     ClientId = dto.ClientId
                 };
-                dto.PickupLocation = _mapper.Map<AddressDto>(pickupLocation);
+            }
+            else
+            {
+                pickupLocation = _uow.AddressRepository.Get((int)dto.PickupLocation.Id);
+                if (pickupLocation == null)
+                {
+                    throw new BadRequestException("Destination address does not exist");
+                }
             }
 
             var id = _uow.OrderRepository.GetMaxId() + 1;
@@ -64,6 +77,8 @@ namespace FirmaKurierska.Application.Services
             order.Id = id;
             order.Status = OrderStatus.ReadyForPickup;
             order.ShippingDate = DateTime.Now;
+            order.PickupLocation = pickupLocation;
+            order.Destination = destination;
             _uow.OrderRepository.Insert(order);
             _uow.Commit();
 

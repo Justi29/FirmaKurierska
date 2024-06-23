@@ -16,6 +16,25 @@ namespace FirmaKurierska.Infrastructure
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Address>()
+                .HasOne(a => a.Courier)
+                .WithMany(c => c.Addresses)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Address>()
+                .HasOne(a => a.Client)
+                .WithMany(c => c.Addresses)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Order>()
+                .HasOne(a => a.Client)
+                .WithMany(c => c.Orders)
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Order>()
+                .HasOne(a => a.Courier)
+                .WithMany(c => c.Orders)
+                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

@@ -105,7 +105,7 @@ namespace FirmaKurierska.Infrastructure
                             PickupDate = new DateTime(2024, 6, 11),
                             DeliveryDate = new DateTime(2024, 6, 12),
                             ClientId = 1,
-                            CourierId = 2,
+                            CourierId = 1,
                         },
                     };
                     _dbContext.Orders.AddRange(orders);

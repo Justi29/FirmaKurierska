@@ -34,7 +34,10 @@ try
     // rejestracja kontekstu bazy w kontenerze IoC
     var sqliteConnectionString = "Data Source=FirmaKurierska.WebAPI.db";
     builder.Services.AddDbContext<KioskDbContext>(options =>
-        options.UseSqlite(sqliteConnectionString));
+    {
+        options.UseSqlite(sqliteConnectionString);
+    });
+        
 
     builder.Services.AddScoped<IKioskUnitOfWork, KioskUnitOfWork>();
     builder.Services.AddScoped<IClientRepository, ClientRepository>();

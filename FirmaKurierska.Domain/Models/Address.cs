@@ -1,4 +1,6 @@
-﻿namespace FirmaKurierska.Domain.Models
+﻿using System.Diagnostics;
+
+namespace FirmaKurierska.Domain.Models
 {
     public class Address
     {
@@ -9,6 +11,8 @@
         public string Street { get; set; }
 
         public int? ClientId { get; set; }
+        public Courier? Courier { get; set; }
+        public Client? Client { get; set; }
 
         //public ICollection<Client> Clients { get; set; }
     }

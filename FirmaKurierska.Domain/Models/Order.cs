@@ -26,6 +26,8 @@
         public DateTime? PickupDate { get; set; } 
         public DateTime? DeliveryDate { get; set; }
         public int ClientId { get; set; }
+        public Client? Client { get; set; }
+        public Courier? Courier { get; set; }
         public int? CourierId { get; set; }
     }
 }

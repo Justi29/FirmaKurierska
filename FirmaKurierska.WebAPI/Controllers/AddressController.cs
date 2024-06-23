@@ -30,6 +30,29 @@ namespace FirmaKurierska.WebAPI.Controllers
             return Ok(result);
         }
 
+        [HttpGet("client/{clientId}", Name = "GetAddressesForClient")]
+        public ActionResult<IEnumerable<OrderDto>> GetForClient(int clientId)
+        {
+            _logger.LogDebug($"Rozpoczęto pobieranie listy wszystkich adresów dla klienta ${clientId}");
+            var result = _addressService.GetAllForClient(clientId);
+            _logger.LogDebug($"Pobrano liste wszystkich zamówień dla klienta ${clientId}");
+            return Ok(result);
+        }
+
+        [HttpPost]
+        [ProducesResponseType(StatusCodes.Status201Created)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        public ActionResult Create([FromBody] AddressDto dto)
+        {
+            _logger.LogDebug("Rozpoczęto tworzenie nowego adresu");
+            var id = _addressService.Create(dto);
+
+            _logger.LogDebug($"Utworzono nowegy adres z id = {id}");
+            var actionName = nameof(Get);
+            var routeValues = new { id };
+            return CreatedAtAction(actionName, routeValues, null);
+        }
+
         [HttpGet("{id}", Name = "GetAddress")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

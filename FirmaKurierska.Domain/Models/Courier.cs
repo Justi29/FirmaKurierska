@@ -1,4 +1,6 @@
-﻿namespace FirmaKurierska.Domain.Models
+﻿using System.Xml.Linq;
+
+namespace FirmaKurierska.Domain.Models
 {
     public class Courier
     {
@@ -7,7 +9,8 @@
         public string Surname { get; set; }
         public string PhoneNumber { get; set; }
         public string Email { get; set; }
+        public ICollection<Address>? Addresses { get; set; } = new List<Address>();
 
-        public ICollection<Order> Orders { get; set; }
+        public ICollection<Order>? Orders { get; set; }
     }
 }
