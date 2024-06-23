@@ -41,3 +41,5 @@ C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debu
 C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\ref\FirmaKurierska.Infrastructure.dll
 C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.SharedKernel.dll
 C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.SharedKernel.pdb
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.SharedKernel.dll
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.SharedKernel.pdb

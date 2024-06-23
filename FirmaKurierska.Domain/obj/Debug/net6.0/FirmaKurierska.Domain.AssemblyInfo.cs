@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FirmaKurierska.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+649a14f3f9916f6a12bc93fd7045a762aa2a4158")]
 [assembly: System.Reflection.AssemblyProductAttribute("FirmaKurierska.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FirmaKurierska.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
