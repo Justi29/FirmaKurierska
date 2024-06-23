@@ -726,6 +726,7 @@
         "dependencies": {
           "AutoMapper": "13.0.1",
           "FirmaKurierska.Domain": "1.0.0",
+          "FirmaKurierska.SharedKernel": "1.0.0",
           "FluentValidation.AspNetCore": "11.3.0",
           "NLog.Web.AspNetCore": "5.3.10"
         },
@@ -751,6 +752,7 @@
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
           "FirmaKurierska.Application": "1.0.0",
+          "FirmaKurierska.SharedKernel": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.18",
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.18"
         },
@@ -759,6 +761,19 @@
         },
         "runtime": {
           "bin/placeholder/FirmaKurierska.Infrastructure.dll": {}
+        }
+      },
+      "FirmaKurierska.SharedKernel/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FirmaKurierska.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FirmaKurierska.SharedKernel.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FirmaKurierska.SharedKernel.dll": {}
         }
       }
     }
@@ -1936,12 +1951,18 @@
       "type": "project",
       "path": "../FirmaKurierska.Infrastructure/FirmaKurierska.Infrastructure.csproj",
       "msbuildProject": "../FirmaKurierska.Infrastructure/FirmaKurierska.Infrastructure.csproj"
+    },
+    "FirmaKurierska.SharedKernel/1.0.0": {
+      "type": "project",
+      "path": "../FirmaKurierska.SharedKernel/FirmaKurierska.SharedKernel.csproj",
+      "msbuildProject": "../FirmaKurierska.SharedKernel/FirmaKurierska.SharedKernel.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "FirmaKurierska.Application >= 1.0.0",
       "FirmaKurierska.Infrastructure >= 1.0.0",
+      "FirmaKurierska.SharedKernel >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.6.2"
     ]
   },
@@ -1982,6 +2003,9 @@
             },
             "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Infrastructure\\FirmaKurierska.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Infrastructure\\FirmaKurierska.Infrastructure.csproj"
+            },
+            "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.SharedKernel\\FirmaKurierska.SharedKernel.csproj": {
+              "projectPath": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.SharedKernel\\FirmaKurierska.SharedKernel.csproj"
             }
           }
         }

@@ -1,0 +1,58 @@
+﻿@page "/client"
+@inject IClientService _clientService
+@inject IJSRuntime _js
+<PageTitle>Client list</PageTitle>
+<h1>Client list</h1>
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Surname</th>
+                <th>PhoneNumber</th>
+                <th>Email</th>
+                <th>IsCompany</th>
+                <th>NIP</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var c in _clientList)
+            {
+                <tr>
+                    <td>@c.Id</td>
+                    <td>@c.Name</td>
+                    <td>@c.Surname</td>
+                    <td>@c.PhoneNumber</td>
+                    <td>@c.Email</td>
+                    <td>@c.IsCompany</td>
+                    <td>@c.NIP</td>
+                    <td>
+                        <button class="btn bg-danger" @onclick="()=>DeleteClient(c.Id)"> Delete </button>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+@code {
+    private List<ClientDto> _clientList = null;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        _clientList = _clientService.GetAll();
+    }
+    protected async Task DeleteClient(int id)
+    {
+        var client = _clientList.First(q => q.Id == id);
+        var confirm = await _js.InvokeAsync<bool>("confirm", $"Are You Sure You Want To Delete client {client.Name} {client.Surname}?");
+        if (confirm)
+        {
+            _clientService.Delete(id);
+            OnInitialized();
+        }
+    }
+} 

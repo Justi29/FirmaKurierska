@@ -1,0 +1,65 @@
+﻿@page "/order"
+@inject IOrderService _orderService
+@inject IJSRuntime _js
+<PageTitle>Order list</PageTitle>
+<h1>Order list</h1>
+
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Status</th>
+                <th>Size</th>
+                <th>TotalCost</th>
+                <th>PickupLocation</th>
+                <th>Destination</th>
+                <th>ShippingDate</th>
+                <th>PickupDate</th>
+                <th>DeliveryDate</th>
+                <th>ClientId</th>
+                <th>CourierId</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var o in _orderList)
+            {
+                <tr>
+                    <td>@o.Id</td>
+                    <td>@o.Status</td>
+                    <td>@o.Size</td>
+                    <td>@o.TotalCost</td>
+                    <td>@o.PickupLocation</td>
+                    <td>@o.Destination</td>
+                    <td>@o.ShippingDate</td>
+                    <td>@o.PickupDate</td>
+                    <td>@o.DeliveryDate</td>
+                    <td>@o.ClientId</td>
+                    <td>@o.CourierId</td>
+                    <td>
+                        <button class="btn bg-danger" @onclick="()=>DeleteOrder(o.Id)"> Delete </button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+@code {
+    private List<OrderDto> _orderList = null;
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        _orderList = _orderService.GetAll();
+    }
+    protected async Task DeleteOrder(int id)
+    {
+        var order = _orderList.First(q => q.Id == id);
+        var confirm = await _js.InvokeAsync<bool>("confirm", $"Are You Sure You Want To Delete order {order.Id}?");
+        if (confirm)
+        {
+            _orderService.Delete(id);
+            OnInitialized();
+        }
+    }
+} 

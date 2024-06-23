@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FirmaKurierska.Application.Dto
+namespace FirmaKurierska.SharedKernel.Dto
 {
     public class UpdateOrderDto
     {

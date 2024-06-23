@@ -9,6 +9,7 @@
       "FirmaKurierska.Infrastructure/1.0.0": {
         "dependencies": {
           "FirmaKurierska.Application": "1.0.0",
+          "FirmaKurierska.SharedKernel": "1.0.0",
           "Microsoft.EntityFrameworkCore": "7.0.18",
           "Microsoft.EntityFrameworkCore.Sqlite": "7.0.18"
         },
@@ -460,6 +461,7 @@
         "dependencies": {
           "AutoMapper": "13.0.1",
           "FirmaKurierska.Domain": "1.0.0",
+          "FirmaKurierska.SharedKernel": "1.0.0",
           "FluentValidation.AspNetCore": "11.3.0",
           "NLog.Web.AspNetCore": "5.3.10"
         },
@@ -470,6 +472,14 @@
       "FirmaKurierska.Domain/1.0.0": {
         "runtime": {
           "FirmaKurierska.Domain.dll": {}
+        }
+      },
+      "FirmaKurierska.SharedKernel/1.0.0": {
+        "dependencies": {
+          "FirmaKurierska.Domain": "1.0.0"
+        },
+        "runtime": {
+          "FirmaKurierska.SharedKernel.dll": {}
         }
       }
     }
@@ -710,6 +720,11 @@
       "sha512": ""
     },
     "FirmaKurierska.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "FirmaKurierska.SharedKernel/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,4 +1,4 @@
-﻿using FirmaKurierska.Application.Dto;
+﻿using FirmaKurierska.SharedKernel.Dto;
 using FirmaKurierska.Application.Services;
 using FirmaKurierska.Domain.Contracts;
 using FirmaKurierska.Infrastructure.Repositories;

@@ -8557,3 +8557,627 @@ LIMIT 1
 2024-06-21 15:43:27.0170 DEBUG Disposing connection to database 'main' on server 'FirmaKurierska.WebAPI.db'. 
 2024-06-21 15:43:27.0170 DEBUG Disposed connection to database 'main' on server 'FirmaKurierska.WebAPI.db' (0ms). 
 2024-06-21 15:43:27.0170 INFO Request finished HTTP/1.1 POST http://localhost:5218/Order application/json 418 - 400 - - 2086.9331ms 
+2024-06-21 21:21:35.8033 DEBUG init main 
+2024-06-21 21:21:36.8026 DEBUG Registered model binder providers, in the following order: Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider, Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider 
+2024-06-21 21:21:37.1195 DEBUG An 'IServiceProvider' was created for internal use by Entity Framework. 
+2024-06-21 21:21:38.4105 DEBUG The property 'Order.DestinationId' was created in shadow state because there are no eligible CLR members with a matching name. 
+2024-06-21 21:21:38.4125 DEBUG The property 'Order.PickupLocationId' was created in shadow state because there are no eligible CLR members with a matching name. 
+2024-06-21 21:21:38.9089 DEBUG Entity Framework Core 7.0.18 initialized 'KioskDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.18' with options: None 
+2024-06-21 21:21:39.0276 DEBUG Creating DbConnection. 
+2024-06-21 21:21:39.0515 DEBUG Created DbConnection. (20ms). 
+2024-06-21 21:21:39.0625 DEBUG Opening connection to database 'main' on server 'FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:39.0919 DEBUG Opened connection to database 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:39.1041 DEBUG Disposing connection to database 'main' on server 'FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:39.1041 DEBUG Disposed connection to database 'main' on server 'FirmaKurierska.WebAPI.db' (3ms). 
+2024-06-21 21:21:39.1155 DEBUG Creating DbConnection. 
+2024-06-21 21:21:39.1155 DEBUG Created DbConnection. (0ms). 
+2024-06-21 21:21:39.1155 DEBUG Opening connection to database 'main' on server 'FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:39.1155 DEBUG Opened connection to database 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:39.1155 DEBUG Closing connection to database 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:39.1333 DEBUG Closed connection to database 'main' on server 'FirmaKurierska.WebAPI.db' (7ms). 
+2024-06-21 21:21:39.1333 DEBUG Creating DbConnection. 
+2024-06-21 21:21:39.1333 DEBUG Created DbConnection. (0ms). 
+2024-06-21 21:21:39.1333 DEBUG Opening connection to database 'main' on server 'FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:39.1488 DEBUG An error occurred using the connection to database 'main' on server 'FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:39.1488 DEBUG Disposing connection to database 'main' on server 'FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:39.1488 DEBUG Disposed connection to database 'main' on server 'FirmaKurierska.WebAPI.db' (0ms). 
+2024-06-21 21:21:39.1488 DEBUG Opening connection to database 'main' on server 'FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:39.1488 DEBUG Opened connection to database 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:39.1630 DEBUG Creating DbCommand for 'ExecuteNonQuery'. 
+2024-06-21 21:21:39.1630 DEBUG Created DbCommand for 'ExecuteNonQuery' (7ms). 
+2024-06-21 21:21:39.1802 DEBUG Initialized DbCommand for 'ExecuteNonQuery' (18ms). 
+2024-06-21 21:21:39.1942 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA journal_mode = 'wal'; 
+2024-06-21 21:21:39.2358 INFO Executed DbCommand (45ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+PRAGMA journal_mode = 'wal'; 
+2024-06-21 21:21:39.2358 DEBUG Closing connection to database 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:39.2358 DEBUG Closed connection to database 'main' on server 'FirmaKurierska.WebAPI.db' (0ms). 
+2024-06-21 21:21:39.2564 DEBUG The property 'Order.DestinationId' was created in shadow state because there are no eligible CLR members with a matching name. 
+2024-06-21 21:21:39.2564 DEBUG The property 'Order.PickupLocationId' was created in shadow state because there are no eligible CLR members with a matching name. 
+2024-06-21 21:21:39.4420 DEBUG Opening connection to database 'main' on server 'FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:39.4420 DEBUG Opened connection to database 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:39.4466 DEBUG Beginning transaction with isolation level 'Unspecified'. 
+2024-06-21 21:21:39.4466 DEBUG Began transaction with isolation level 'Serializable'. 
+2024-06-21 21:21:39.4466 DEBUG Creating DbCommand for 'ExecuteNonQuery'. 
+2024-06-21 21:21:39.4466 DEBUG Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-06-21 21:21:39.4466 DEBUG Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-06-21 21:21:39.4466 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "Clients" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Clients" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Surname" TEXT NOT NULL,
+    "PhoneNumber" TEXT NOT NULL,
+    "Email" TEXT NOT NULL,
+    "IsCompany" INTEGER NOT NULL,
+    "NIP" TEXT NULL
+); 
+2024-06-21 21:21:39.4466 INFO Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "Clients" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Clients" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Surname" TEXT NOT NULL,
+    "PhoneNumber" TEXT NOT NULL,
+    "Email" TEXT NOT NULL,
+    "IsCompany" INTEGER NOT NULL,
+    "NIP" TEXT NULL
+); 
+2024-06-21 21:21:39.4466 DEBUG Creating DbCommand for 'ExecuteNonQuery'. 
+2024-06-21 21:21:39.4466 DEBUG Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-06-21 21:21:39.4466 DEBUG Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-06-21 21:21:39.4466 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "Couriers" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Couriers" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Surname" TEXT NOT NULL,
+    "PhoneNumber" TEXT NOT NULL,
+    "Email" TEXT NOT NULL
+); 
+2024-06-21 21:21:39.4466 INFO Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "Couriers" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Couriers" PRIMARY KEY AUTOINCREMENT,
+    "Name" TEXT NOT NULL,
+    "Surname" TEXT NOT NULL,
+    "PhoneNumber" TEXT NOT NULL,
+    "Email" TEXT NOT NULL
+); 
+2024-06-21 21:21:39.4466 DEBUG Creating DbCommand for 'ExecuteNonQuery'. 
+2024-06-21 21:21:39.4466 DEBUG Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-06-21 21:21:39.4466 DEBUG Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-06-21 21:21:39.4466 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "Addresses" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Addresses" PRIMARY KEY AUTOINCREMENT,
+    "Country" TEXT NOT NULL,
+    "City" TEXT NOT NULL,
+    "PostCode" TEXT NOT NULL,
+    "Street" TEXT NOT NULL,
+    "ClientId" INTEGER NULL,
+    CONSTRAINT "FK_Addresses_Clients_ClientId" FOREIGN KEY ("ClientId") REFERENCES "Clients" ("Id")
+); 
+2024-06-21 21:21:39.4466 INFO Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "Addresses" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Addresses" PRIMARY KEY AUTOINCREMENT,
+    "Country" TEXT NOT NULL,
+    "City" TEXT NOT NULL,
+    "PostCode" TEXT NOT NULL,
+    "Street" TEXT NOT NULL,
+    "ClientId" INTEGER NULL,
+    CONSTRAINT "FK_Addresses_Clients_ClientId" FOREIGN KEY ("ClientId") REFERENCES "Clients" ("Id")
+); 
+2024-06-21 21:21:39.4466 DEBUG Creating DbCommand for 'ExecuteNonQuery'. 
+2024-06-21 21:21:39.4466 DEBUG Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-06-21 21:21:39.4466 DEBUG Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-06-21 21:21:39.4466 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "Orders" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Orders" PRIMARY KEY AUTOINCREMENT,
+    "Status" INTEGER NOT NULL,
+    "Size" INTEGER NOT NULL,
+    "TotalCost" REAL NOT NULL,
+    "PickupLocationId" INTEGER NOT NULL,
+    "DestinationId" INTEGER NOT NULL,
+    "ShippingDate" TEXT NOT NULL,
+    "PickupDate" TEXT NULL,
+    "DeliveryDate" TEXT NULL,
+    "ClientId" INTEGER NOT NULL,
+    "CourierId" INTEGER NULL,
+    CONSTRAINT "FK_Orders_Addresses_DestinationId" FOREIGN KEY ("DestinationId") REFERENCES "Addresses" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_Orders_Addresses_PickupLocationId" FOREIGN KEY ("PickupLocationId") REFERENCES "Addresses" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_Orders_Clients_ClientId" FOREIGN KEY ("ClientId") REFERENCES "Clients" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_Orders_Couriers_CourierId" FOREIGN KEY ("CourierId") REFERENCES "Couriers" ("Id")
+); 
+2024-06-21 21:21:39.4466 INFO Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE TABLE "Orders" (
+    "Id" INTEGER NOT NULL CONSTRAINT "PK_Orders" PRIMARY KEY AUTOINCREMENT,
+    "Status" INTEGER NOT NULL,
+    "Size" INTEGER NOT NULL,
+    "TotalCost" REAL NOT NULL,
+    "PickupLocationId" INTEGER NOT NULL,
+    "DestinationId" INTEGER NOT NULL,
+    "ShippingDate" TEXT NOT NULL,
+    "PickupDate" TEXT NULL,
+    "DeliveryDate" TEXT NULL,
+    "ClientId" INTEGER NOT NULL,
+    "CourierId" INTEGER NULL,
+    CONSTRAINT "FK_Orders_Addresses_DestinationId" FOREIGN KEY ("DestinationId") REFERENCES "Addresses" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_Orders_Addresses_PickupLocationId" FOREIGN KEY ("PickupLocationId") REFERENCES "Addresses" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_Orders_Clients_ClientId" FOREIGN KEY ("ClientId") REFERENCES "Clients" ("Id") ON DELETE CASCADE,
+    CONSTRAINT "FK_Orders_Couriers_CourierId" FOREIGN KEY ("CourierId") REFERENCES "Couriers" ("Id")
+); 
+2024-06-21 21:21:39.4466 DEBUG Creating DbCommand for 'ExecuteNonQuery'. 
+2024-06-21 21:21:39.4466 DEBUG Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-06-21 21:21:39.4466 DEBUG Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-06-21 21:21:39.4466 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX "IX_Addresses_ClientId" ON "Addresses" ("ClientId"); 
+2024-06-21 21:21:39.4466 INFO Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX "IX_Addresses_ClientId" ON "Addresses" ("ClientId"); 
+2024-06-21 21:21:39.4466 DEBUG Creating DbCommand for 'ExecuteNonQuery'. 
+2024-06-21 21:21:39.4466 DEBUG Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-06-21 21:21:39.4466 DEBUG Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-06-21 21:21:39.4466 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX "IX_Orders_ClientId" ON "Orders" ("ClientId"); 
+2024-06-21 21:21:39.4466 INFO Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX "IX_Orders_ClientId" ON "Orders" ("ClientId"); 
+2024-06-21 21:21:39.4466 DEBUG Creating DbCommand for 'ExecuteNonQuery'. 
+2024-06-21 21:21:39.4466 DEBUG Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-06-21 21:21:39.4466 DEBUG Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-06-21 21:21:39.4466 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX "IX_Orders_CourierId" ON "Orders" ("CourierId"); 
+2024-06-21 21:21:39.4466 INFO Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX "IX_Orders_CourierId" ON "Orders" ("CourierId"); 
+2024-06-21 21:21:39.4466 DEBUG Creating DbCommand for 'ExecuteNonQuery'. 
+2024-06-21 21:21:39.4466 DEBUG Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-06-21 21:21:39.4466 DEBUG Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-06-21 21:21:39.4466 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX "IX_Orders_DestinationId" ON "Orders" ("DestinationId"); 
+2024-06-21 21:21:39.4466 INFO Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX "IX_Orders_DestinationId" ON "Orders" ("DestinationId"); 
+2024-06-21 21:21:39.4466 DEBUG Creating DbCommand for 'ExecuteNonQuery'. 
+2024-06-21 21:21:39.4466 DEBUG Created DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-06-21 21:21:39.4466 DEBUG Initialized DbCommand for 'ExecuteNonQuery' (0ms). 
+2024-06-21 21:21:39.4466 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX "IX_Orders_PickupLocationId" ON "Orders" ("PickupLocationId"); 
+2024-06-21 21:21:39.4466 INFO Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+CREATE INDEX "IX_Orders_PickupLocationId" ON "Orders" ("PickupLocationId"); 
+2024-06-21 21:21:39.4466 DEBUG Committing transaction. 
+2024-06-21 21:21:39.4664 DEBUG Committed transaction. 
+2024-06-21 21:21:39.4664 DEBUG Disposing transaction. 
+2024-06-21 21:21:39.4664 DEBUG Closing connection to database 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:39.4664 DEBUG Closed connection to database 'main' on server 'FirmaKurierska.WebAPI.db' (0ms). 
+2024-06-21 21:21:39.4664 DEBUG Creating DbConnection. 
+2024-06-21 21:21:39.4664 DEBUG Created DbConnection. (0ms). 
+2024-06-21 21:21:39.4664 DEBUG Opening connection to database 'main' on server 'FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:39.4664 DEBUG Opened connection to database 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:39.4664 DEBUG Disposing connection to database 'main' on server 'FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:39.4664 DEBUG Disposed connection to database 'main' on server 'FirmaKurierska.WebAPI.db' (0ms). 
+2024-06-21 21:21:39.5207 DEBUG Compiling query expression: 
+'DbSet<Client>()
+    .Any()' 
+2024-06-21 21:21:39.8709 DEBUG Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Clients AS c)), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    FirmaKurierska.Infrastructure.KioskDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()' 
+2024-06-21 21:21:39.9019 DEBUG Creating DbCommand for 'ExecuteReader'. 
+2024-06-21 21:21:39.9019 DEBUG Created DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:39.9019 DEBUG Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:39.9019 DEBUG Opening connection to database 'main' on server 'FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:39.9019 DEBUG Opened connection to database 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:39.9019 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Clients" AS "c") 
+2024-06-21 21:21:39.9019 INFO Executed DbCommand (1ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Clients" AS "c") 
+2024-06-21 21:21:39.9126 DEBUG Closing data reader to 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:39.9126 DEBUG A data reader for 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db' is being disposed after spending 8ms reading results. 
+2024-06-21 21:21:39.9126 DEBUG Closing connection to database 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:39.9126 DEBUG Closed connection to database 'main' on server 'FirmaKurierska.WebAPI.db' (0ms). 
+2024-06-21 21:21:40.0702 DEBUG Context 'KioskDbContext' started tracking 'Client' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.0702 DEBUG Context 'KioskDbContext' started tracking 'Client' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.0702 DEBUG SaveChanges starting for 'KioskDbContext'. 
+2024-06-21 21:21:40.0702 DEBUG DetectChanges starting for 'KioskDbContext'. 
+2024-06-21 21:21:40.1004 DEBUG DetectChanges completed for 'KioskDbContext'. 
+2024-06-21 21:21:40.2612 DEBUG Opening connection to database 'main' on server 'FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.2612 DEBUG Opened connection to database 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.2612 DEBUG Beginning transaction with isolation level 'Unspecified'. 
+2024-06-21 21:21:40.2612 DEBUG Began transaction with isolation level 'Serializable'. 
+2024-06-21 21:21:40.2612 DEBUG Creating DbCommand for 'ExecuteReader'. 
+2024-06-21 21:21:40.2612 DEBUG Created DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.2612 DEBUG Initialized DbCommand for 'ExecuteReader' (4ms). 
+2024-06-21 21:21:40.2788 DEBUG Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 17), @p2='?' (DbType = Boolean), @p3='?' (Size = 10), @p4='?' (Size = 6), @p5='?' (Size = 9), @p6='?' (Size = 5)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Clients" ("Id", "Email", "IsCompany", "NIP", "Name", "PhoneNumber", "Surname")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6); 
+2024-06-21 21:21:40.2903 INFO Executed DbCommand (22ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 17), @p2='?' (DbType = Boolean), @p3='?' (Size = 10), @p4='?' (Size = 6), @p5='?' (Size = 9), @p6='?' (Size = 5)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Clients" ("Id", "Email", "IsCompany", "NIP", "Name", "PhoneNumber", "Surname")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6); 
+2024-06-21 21:21:40.2903 DEBUG Closing data reader to 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.2903 DEBUG A data reader for 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db' is being disposed after spending 2ms reading results. 
+2024-06-21 21:21:40.2903 DEBUG Creating DbCommand for 'ExecuteReader'. 
+2024-06-21 21:21:40.2903 DEBUG Created DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.2903 DEBUG Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.2903 DEBUG Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 16), @p2='?' (DbType = Boolean), @p3='?', @p4='?' (Size = 3), @p5='?' (Size = 9), @p6='?' (Size = 5)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Clients" ("Id", "Email", "IsCompany", "NIP", "Name", "PhoneNumber", "Surname")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6); 
+2024-06-21 21:21:40.2903 INFO Executed DbCommand (1ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 16), @p2='?' (DbType = Boolean), @p3='?', @p4='?' (Size = 3), @p5='?' (Size = 9), @p6='?' (Size = 5)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Clients" ("Id", "Email", "IsCompany", "NIP", "Name", "PhoneNumber", "Surname")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6); 
+2024-06-21 21:21:40.2903 DEBUG Closing data reader to 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.2903 DEBUG A data reader for 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db' is being disposed after spending 0ms reading results. 
+2024-06-21 21:21:40.2903 DEBUG Committing transaction. 
+2024-06-21 21:21:40.2903 DEBUG Committed transaction. 
+2024-06-21 21:21:40.2903 DEBUG Closing connection to database 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.2903 DEBUG Closed connection to database 'main' on server 'FirmaKurierska.WebAPI.db' (0ms). 
+2024-06-21 21:21:40.2903 DEBUG Disposing transaction. 
+2024-06-21 21:21:40.3165 DEBUG An entity of type 'Client' tracked by 'KioskDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.3165 DEBUG An entity of type 'Client' tracked by 'KioskDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.3187 DEBUG SaveChanges completed for 'KioskDbContext' with 2 entities written to the database. 
+2024-06-21 21:21:40.3187 DEBUG Compiling query expression: 
+'DbSet<Courier>()
+    .Any()' 
+2024-06-21 21:21:40.3187 DEBUG Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Couriers AS c)), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    FirmaKurierska.Infrastructure.KioskDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()' 
+2024-06-21 21:21:40.3187 DEBUG Creating DbCommand for 'ExecuteReader'. 
+2024-06-21 21:21:40.3187 DEBUG Created DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.3187 DEBUG Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.3187 DEBUG Opening connection to database 'main' on server 'FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.3187 DEBUG Opened connection to database 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.3187 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Couriers" AS "c") 
+2024-06-21 21:21:40.3187 INFO Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Couriers" AS "c") 
+2024-06-21 21:21:40.3187 DEBUG Closing data reader to 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.3187 DEBUG A data reader for 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db' is being disposed after spending 0ms reading results. 
+2024-06-21 21:21:40.3187 DEBUG Closing connection to database 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.3187 DEBUG Closed connection to database 'main' on server 'FirmaKurierska.WebAPI.db' (0ms). 
+2024-06-21 21:21:40.3429 DEBUG Context 'KioskDbContext' started tracking 'Courier' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.3429 DEBUG Context 'KioskDbContext' started tracking 'Courier' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.3429 DEBUG SaveChanges starting for 'KioskDbContext'. 
+2024-06-21 21:21:40.3429 DEBUG DetectChanges starting for 'KioskDbContext'. 
+2024-06-21 21:21:40.3429 DEBUG DetectChanges completed for 'KioskDbContext'. 
+2024-06-21 21:21:40.3497 DEBUG Opening connection to database 'main' on server 'FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.3497 DEBUG Opened connection to database 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.3497 DEBUG Beginning transaction with isolation level 'Unspecified'. 
+2024-06-21 21:21:40.3497 DEBUG Began transaction with isolation level 'Serializable'. 
+2024-06-21 21:21:40.3497 DEBUG Creating DbCommand for 'ExecuteReader'. 
+2024-06-21 21:21:40.3497 DEBUG Created DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.3497 DEBUG Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.3497 DEBUG Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 15), @p2='?' (Size = 6), @p3='?' (Size = 9), @p4='?' (Size = 3)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Couriers" ("Id", "Email", "Name", "PhoneNumber", "Surname")
+VALUES (@p0, @p1, @p2, @p3, @p4); 
+2024-06-21 21:21:40.3497 INFO Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 15), @p2='?' (Size = 6), @p3='?' (Size = 9), @p4='?' (Size = 3)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Couriers" ("Id", "Email", "Name", "PhoneNumber", "Surname")
+VALUES (@p0, @p1, @p2, @p3, @p4); 
+2024-06-21 21:21:40.3497 DEBUG Closing data reader to 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.3497 DEBUG A data reader for 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db' is being disposed after spending 0ms reading results. 
+2024-06-21 21:21:40.3497 DEBUG Creating DbCommand for 'ExecuteReader'. 
+2024-06-21 21:21:40.3497 DEBUG Created DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.3497 DEBUG Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.3497 DEBUG Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 18), @p2='?' (Size = 5), @p3='?' (Size = 9), @p4='?' (Size = 3)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Couriers" ("Id", "Email", "Name", "PhoneNumber", "Surname")
+VALUES (@p0, @p1, @p2, @p3, @p4); 
+2024-06-21 21:21:40.3497 INFO Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 18), @p2='?' (Size = 5), @p3='?' (Size = 9), @p4='?' (Size = 3)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Couriers" ("Id", "Email", "Name", "PhoneNumber", "Surname")
+VALUES (@p0, @p1, @p2, @p3, @p4); 
+2024-06-21 21:21:40.3497 DEBUG Closing data reader to 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.3497 DEBUG A data reader for 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db' is being disposed after spending 0ms reading results. 
+2024-06-21 21:21:40.3497 DEBUG Committing transaction. 
+2024-06-21 21:21:40.3497 DEBUG Committed transaction. 
+2024-06-21 21:21:40.3497 DEBUG Closing connection to database 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.3497 DEBUG Closed connection to database 'main' on server 'FirmaKurierska.WebAPI.db' (0ms). 
+2024-06-21 21:21:40.3497 DEBUG Disposing transaction. 
+2024-06-21 21:21:40.3497 DEBUG An entity of type 'Courier' tracked by 'KioskDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.3497 DEBUG An entity of type 'Courier' tracked by 'KioskDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.3497 DEBUG SaveChanges completed for 'KioskDbContext' with 2 entities written to the database. 
+2024-06-21 21:21:40.3497 DEBUG Compiling query expression: 
+'DbSet<Order>()
+    .Any()' 
+2024-06-21 21:21:40.3497 DEBUG Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Orders AS o)), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    FirmaKurierska.Infrastructure.KioskDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()' 
+2024-06-21 21:21:40.3497 DEBUG Creating DbCommand for 'ExecuteReader'. 
+2024-06-21 21:21:40.3497 DEBUG Created DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.3497 DEBUG Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.3497 DEBUG Opening connection to database 'main' on server 'FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.3497 DEBUG Opened connection to database 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.3497 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Orders" AS "o") 
+2024-06-21 21:21:40.3497 INFO Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Orders" AS "o") 
+2024-06-21 21:21:40.3497 DEBUG Closing data reader to 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.3497 DEBUG A data reader for 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db' is being disposed after spending 0ms reading results. 
+2024-06-21 21:21:40.3497 DEBUG Closing connection to database 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.3497 DEBUG Closed connection to database 'main' on server 'FirmaKurierska.WebAPI.db' (0ms). 
+2024-06-21 21:21:40.4836 DEBUG Context 'KioskDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.5066 DEBUG '"KioskDbContext"' generated a temporary value for the property '"Id"."Address"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.5838 DEBUG The foreign key property 'Order.DestinationId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values. 
+2024-06-21 21:21:40.6043 DEBUG Context 'KioskDbContext' started tracking 'Address' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.6043 DEBUG '"KioskDbContext"' generated a temporary value for the property '"Id"."Address"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.6043 DEBUG The foreign key property 'Order.PickupLocationId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values. 
+2024-06-21 21:21:40.6043 DEBUG Context 'KioskDbContext' started tracking 'Address' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.6043 DEBUG Context 'KioskDbContext' started tracking 'Order' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.6043 DEBUG '"KioskDbContext"' generated a temporary value for the property '"Id"."Address"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.6043 DEBUG The foreign key property 'Order.DestinationId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values. 
+2024-06-21 21:21:40.6043 DEBUG Context 'KioskDbContext' started tracking 'Address' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.6043 DEBUG '"KioskDbContext"' generated a temporary value for the property '"Id"."Address"'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.6043 DEBUG The foreign key property 'Order.PickupLocationId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values. 
+2024-06-21 21:21:40.6043 DEBUG Context 'KioskDbContext' started tracking 'Address' entity. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.6043 DEBUG SaveChanges starting for 'KioskDbContext'. 
+2024-06-21 21:21:40.6043 DEBUG DetectChanges starting for 'KioskDbContext'. 
+2024-06-21 21:21:40.6441 DEBUG DetectChanges completed for 'KioskDbContext'. 
+2024-06-21 21:21:40.6555 DEBUG Opening connection to database 'main' on server 'FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.6555 DEBUG Opened connection to database 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.6555 DEBUG Beginning transaction with isolation level 'Unspecified'. 
+2024-06-21 21:21:40.6555 DEBUG Began transaction with isolation level 'Serializable'. 
+2024-06-21 21:21:40.6555 DEBUG Creating DbCommand for 'ExecuteReader'. 
+2024-06-21 21:21:40.6555 DEBUG Created DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.6555 DEBUG Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.6555 DEBUG Executing DbCommand [Parameters=[@p0='?' (Size = 6), @p1='?' (DbType = Int32), @p2='?' (Size = 6), @p3='?' (Size = 6), @p4='?' (Size = 16)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Addresses" ("City", "ClientId", "Country", "PostCode", "Street")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id"; 
+2024-06-21 21:21:40.6688 INFO Executed DbCommand (10ms) [Parameters=[@p0='?' (Size = 6), @p1='?' (DbType = Int32), @p2='?' (Size = 6), @p3='?' (Size = 6), @p4='?' (Size = 16)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Addresses" ("City", "ClientId", "Country", "PostCode", "Street")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id"; 
+2024-06-21 21:21:40.6901 DEBUG The foreign key property 'Address.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values. 
+2024-06-21 21:21:40.6954 DEBUG The foreign key property 'Order.DestinationId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values. 
+2024-06-21 21:21:40.6954 DEBUG Closing data reader to 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.6954 DEBUG A data reader for 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db' is being disposed after spending 26ms reading results. 
+2024-06-21 21:21:40.6954 DEBUG Creating DbCommand for 'ExecuteReader'. 
+2024-06-21 21:21:40.6954 DEBUG Created DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.6954 DEBUG Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.6954 DEBUG Executing DbCommand [Parameters=[@p0='?' (Size = 6), @p1='?' (DbType = Int32), @p2='?' (Size = 6), @p3='?' (Size = 6), @p4='?' (Size = 18)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Addresses" ("City", "ClientId", "Country", "PostCode", "Street")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id"; 
+2024-06-21 21:21:40.6954 INFO Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 6), @p1='?' (DbType = Int32), @p2='?' (Size = 6), @p3='?' (Size = 6), @p4='?' (Size = 18)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Addresses" ("City", "ClientId", "Country", "PostCode", "Street")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id"; 
+2024-06-21 21:21:40.6954 DEBUG The foreign key property 'Address.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values. 
+2024-06-21 21:21:40.7253 DEBUG The foreign key property 'Order.PickupLocationId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values. 
+2024-06-21 21:21:40.7253 DEBUG Closing data reader to 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.7253 DEBUG A data reader for 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db' is being disposed after spending 28ms reading results. 
+2024-06-21 21:21:40.7253 DEBUG Creating DbCommand for 'ExecuteReader'. 
+2024-06-21 21:21:40.7253 DEBUG Created DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.7253 DEBUG Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.7253 DEBUG Executing DbCommand [Parameters=[@p0='?' (Size = 8), @p1='?' (DbType = Int32), @p2='?' (Size = 6), @p3='?' (Size = 6), @p4='?' (Size = 17)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Addresses" ("City", "ClientId", "Country", "PostCode", "Street")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id"; 
+2024-06-21 21:21:40.7253 INFO Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 8), @p1='?' (DbType = Int32), @p2='?' (Size = 6), @p3='?' (Size = 6), @p4='?' (Size = 17)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Addresses" ("City", "ClientId", "Country", "PostCode", "Street")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id"; 
+2024-06-21 21:21:40.7253 DEBUG The foreign key property 'Address.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values. 
+2024-06-21 21:21:40.7253 DEBUG The foreign key property 'Order.DestinationId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values. 
+2024-06-21 21:21:40.7253 DEBUG Closing data reader to 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.7253 DEBUG A data reader for 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db' is being disposed after spending 0ms reading results. 
+2024-06-21 21:21:40.7253 DEBUG Creating DbCommand for 'ExecuteReader'. 
+2024-06-21 21:21:40.7253 DEBUG Created DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.7253 DEBUG Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.7253 DEBUG Executing DbCommand [Parameters=[@p0='?' (Size = 8), @p1='?' (DbType = Int32), @p2='?' (Size = 6), @p3='?' (Size = 6), @p4='?' (Size = 17)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Addresses" ("City", "ClientId", "Country", "PostCode", "Street")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id"; 
+2024-06-21 21:21:40.7253 INFO Executed DbCommand (0ms) [Parameters=[@p0='?' (Size = 8), @p1='?' (DbType = Int32), @p2='?' (Size = 6), @p3='?' (Size = 6), @p4='?' (Size = 17)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Addresses" ("City", "ClientId", "Country", "PostCode", "Street")
+VALUES (@p0, @p1, @p2, @p3, @p4)
+RETURNING "Id"; 
+2024-06-21 21:21:40.7253 DEBUG The foreign key property 'Address.Id' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values. 
+2024-06-21 21:21:40.7253 DEBUG The foreign key property 'Order.PickupLocationId' was detected as changed. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see property values. 
+2024-06-21 21:21:40.7253 DEBUG Closing data reader to 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.7253 DEBUG A data reader for 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db' is being disposed after spending 0ms reading results. 
+2024-06-21 21:21:40.7253 DEBUG Creating DbCommand for 'ExecuteReader'. 
+2024-06-21 21:21:40.7253 DEBUG Created DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.7430 DEBUG Initialized DbCommand for 'ExecuteReader' (13ms). 
+2024-06-21 21:21:40.7430 DEBUG Executing DbCommand [Parameters=[@p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = DateTime), @p9='?' (DbType = Int32), @p10='?' (DbType = DateTime), @p11='?' (DbType = Int32), @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?' (DbType = Int32), @p15='?' (DbType = Double)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Orders" ("Id", "ClientId", "CourierId", "DeliveryDate", "DestinationId", "PickupDate", "PickupLocationId", "ShippingDate", "Size", "Status", "TotalCost")
+VALUES (@p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15); 
+2024-06-21 21:21:40.7430 INFO Executed DbCommand (2ms) [Parameters=[@p5='?' (DbType = Int32), @p6='?' (DbType = Int32), @p7='?' (DbType = Int32), @p8='?' (DbType = DateTime), @p9='?' (DbType = Int32), @p10='?' (DbType = DateTime), @p11='?' (DbType = Int32), @p12='?' (DbType = DateTime), @p13='?' (DbType = Int32), @p14='?' (DbType = Int32), @p15='?' (DbType = Double)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Orders" ("Id", "ClientId", "CourierId", "DeliveryDate", "DestinationId", "PickupDate", "PickupLocationId", "ShippingDate", "Size", "Status", "TotalCost")
+VALUES (@p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15); 
+2024-06-21 21:21:40.7430 DEBUG Closing data reader to 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.7430 DEBUG A data reader for 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db' is being disposed after spending 0ms reading results. 
+2024-06-21 21:21:40.7430 DEBUG Creating DbCommand for 'ExecuteReader'. 
+2024-06-21 21:21:40.7430 DEBUG Created DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.7430 DEBUG Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.7430 DEBUG Executing DbCommand [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Double)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Orders" ("Id", "ClientId", "CourierId", "DeliveryDate", "DestinationId", "PickupDate", "PickupLocationId", "ShippingDate", "Size", "Status", "TotalCost")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10); 
+2024-06-21 21:21:40.7430 INFO Executed DbCommand (0ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = DateTime), @p4='?' (DbType = Int32), @p5='?' (DbType = DateTime), @p6='?' (DbType = Int32), @p7='?' (DbType = DateTime), @p8='?' (DbType = Int32), @p9='?' (DbType = Int32), @p10='?' (DbType = Double)], CommandType='Text', CommandTimeout='30']
+INSERT INTO "Orders" ("Id", "ClientId", "CourierId", "DeliveryDate", "DestinationId", "PickupDate", "PickupLocationId", "ShippingDate", "Size", "Status", "TotalCost")
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10); 
+2024-06-21 21:21:40.7430 DEBUG Closing data reader to 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.7430 DEBUG A data reader for 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db' is being disposed after spending 2ms reading results. 
+2024-06-21 21:21:40.7430 DEBUG Committing transaction. 
+2024-06-21 21:21:40.7715 DEBUG Committed transaction. 
+2024-06-21 21:21:40.7715 DEBUG Closing connection to database 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.7715 DEBUG Closed connection to database 'main' on server 'FirmaKurierska.WebAPI.db' (0ms). 
+2024-06-21 21:21:40.7715 DEBUG Disposing transaction. 
+2024-06-21 21:21:40.7715 DEBUG An entity of type 'Address' tracked by 'KioskDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.7715 DEBUG An entity of type 'Order' tracked by 'KioskDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.7715 DEBUG An entity of type 'Address' tracked by 'KioskDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.7715 DEBUG An entity of type 'Order' tracked by 'KioskDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.7872 DEBUG An entity of type 'Address' tracked by 'KioskDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.7872 DEBUG An entity of type 'Address' tracked by 'KioskDbContext' changed state from 'Added' to 'Unchanged'. Consider using 'DbContextOptionsBuilder.EnableSensitiveDataLogging' to see key values. 
+2024-06-21 21:21:40.7872 DEBUG SaveChanges completed for 'KioskDbContext' with 6 entities written to the database. 
+2024-06-21 21:21:40.7872 DEBUG Compiling query expression: 
+'DbSet<Address>()
+    .Any()' 
+2024-06-21 21:21:40.7872 DEBUG Generated query execution expression: 
+'queryContext => new SingleQueryingEnumerable<bool>(
+    (RelationalQueryContext)queryContext, 
+    RelationalCommandCache.QueryExpression(
+        Projection Mapping:
+            EmptyProjectionMember -> 0
+        SELECT EXISTS (
+            SELECT 1
+            FROM Addresses AS a)), 
+    null, 
+    Func<QueryContext, DbDataReader, ResultContext, SingleQueryResultCoordinator, bool>, 
+    FirmaKurierska.Infrastructure.KioskDbContext, 
+    False, 
+    False, 
+    True
+)
+    .Single()' 
+2024-06-21 21:21:40.7872 DEBUG Creating DbCommand for 'ExecuteReader'. 
+2024-06-21 21:21:40.7872 DEBUG Created DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.7872 DEBUG Initialized DbCommand for 'ExecuteReader' (0ms). 
+2024-06-21 21:21:40.7872 DEBUG Opening connection to database 'main' on server 'FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.7872 DEBUG Opened connection to database 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.7872 DEBUG Executing DbCommand [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Addresses" AS "a") 
+2024-06-21 21:21:40.7872 INFO Executed DbCommand (0ms) [Parameters=[], CommandType='Text', CommandTimeout='30']
+SELECT EXISTS (
+    SELECT 1
+    FROM "Addresses" AS "a") 
+2024-06-21 21:21:40.7872 DEBUG Closing data reader to 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.7872 DEBUG A data reader for 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db' is being disposed after spending 0ms reading results. 
+2024-06-21 21:21:40.7872 DEBUG Closing connection to database 'main' on server 'C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.7872 DEBUG Closed connection to database 'main' on server 'FirmaKurierska.WebAPI.db' (0ms). 
+2024-06-21 21:21:40.8049 DEBUG 'KioskDbContext' disposed. 
+2024-06-21 21:21:40.8049 DEBUG Disposing connection to database 'main' on server 'FirmaKurierska.WebAPI.db'. 
+2024-06-21 21:21:40.8049 DEBUG Disposed connection to database 'main' on server 'FirmaKurierska.WebAPI.db' (0ms). 
+2024-06-21 21:21:40.8226 DEBUG Hosting starting 
+2024-06-21 21:21:41.1097 INFO Now listening on: http://localhost:5218 
+2024-06-21 21:21:41.1097 DEBUG Loaded hosting startup assembly FirmaKurierska.WebAPI 
+2024-06-21 21:21:41.1097 DEBUG Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh 
+2024-06-21 21:21:41.1097 DEBUG Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net 
+2024-06-21 21:21:41.1097 INFO Application started. Press Ctrl+C to shut down. 
+2024-06-21 21:21:41.1097 INFO Hosting environment: Development 
+2024-06-21 21:21:41.1097 INFO Content root path: C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.WebAPI\ 
+2024-06-21 21:21:41.1097 DEBUG Hosting started 
+2024-06-21 21:21:41.1182 DEBUG Connection id "0HN4I4TGIFAIQ" accepted. 
+2024-06-21 21:21:41.1182 DEBUG Connection id "0HN4I4TGIFAIQ" started. 
+2024-06-21 21:21:41.1311 DEBUG Connection id "0HN4I4TGIFAIR" accepted. 
+2024-06-21 21:21:41.1311 DEBUG Connection id "0HN4I4TGIFAIR" started. 
+2024-06-21 21:21:41.7730 DEBUG Connection id "0HN4I4TGIFAIS" accepted. 
+2024-06-21 21:21:41.7730 DEBUG Connection id "0HN4I4TGIFAIS" started. 
+2024-06-21 21:21:41.7730 DEBUG Connection id "0HN4I4TGIFAIT" accepted. 
+2024-06-21 21:21:41.7730 DEBUG Connection id "0HN4I4TGIFAIT" started. 
+2024-06-21 21:21:41.8425 INFO Request starting HTTP/1.1 GET http://localhost:5218/swagger - - 
+2024-06-21 21:21:42.1040 DEBUG Wildcard detected, all requests with hosts will be allowed. 
+2024-06-21 21:21:42.1040 TRACE All hosts are allowed. 
+2024-06-21 21:21:42.1501 DEBUG No candidates found for the request path '/swagger' 
+2024-06-21 21:21:42.1501 DEBUG Request did not match any endpoints 
+2024-06-21 21:21:42.1501 DEBUG The request path /swagger does not match a supported file type 
+2024-06-21 21:21:42.2029 DEBUG Connection id "0HN4I4TGIFAIS" completed keep alive response. 
+2024-06-21 21:21:42.2029 INFO Request finished HTTP/1.1 GET http://localhost:5218/swagger - - - 301 0 - 368.6181ms 
+2024-06-21 21:21:42.2309 INFO Request starting HTTP/1.1 GET http://localhost:5218/swagger/index.html - - 
+2024-06-21 21:21:42.2309 TRACE All hosts are allowed. 
+2024-06-21 21:21:42.2309 DEBUG No candidates found for the request path '/swagger/index.html' 
+2024-06-21 21:21:42.2309 DEBUG Request did not match any endpoints 
+2024-06-21 21:21:42.2309 DEBUG The request path /swagger/index.html does not match an existing file 
+2024-06-21 21:21:42.4589 DEBUG Response markup is scheduled to include browser refresh script injection. 
+2024-06-21 21:21:42.4848 DEBUG Response markup was updated to include browser refresh script injection. 
+2024-06-21 21:21:42.4848 DEBUG Connection id "0HN4I4TGIFAIS" completed keep alive response. 
+2024-06-21 21:21:42.4848 INFO Request finished HTTP/1.1 GET http://localhost:5218/swagger/index.html - - - 200 - text/html;charset=utf-8 254.1937ms 
+2024-06-21 21:21:42.4928 DEBUG Connection id "0HN4I4TGIFAIU" accepted. 
+2024-06-21 21:21:42.4928 INFO Request starting HTTP/1.1 GET http://localhost:5218/swagger/swagger-ui.css - - 
+2024-06-21 21:21:42.4928 TRACE All hosts are allowed. 
+2024-06-21 21:21:42.4928 DEBUG Connection id "0HN4I4TGIFAIU" started. 
+2024-06-21 21:21:42.4928 DEBUG No candidates found for the request path '/swagger/swagger-ui.css' 
+2024-06-21 21:21:42.4928 DEBUG Request did not match any endpoints 
+2024-06-21 21:21:42.4928 DEBUG The request path /swagger/swagger-ui.css does not match an existing file 
+2024-06-21 21:21:42.4928 INFO Request starting HTTP/1.1 GET http://localhost:5218/swagger/swagger-ui-standalone-preset.js - - 
+2024-06-21 21:21:42.4928 TRACE All hosts are allowed. 
+2024-06-21 21:21:42.4928 DEBUG No candidates found for the request path '/swagger/swagger-ui-standalone-preset.js' 
+2024-06-21 21:21:42.4928 DEBUG Request did not match any endpoints 
+2024-06-21 21:21:42.4928 DEBUG The request path /swagger/swagger-ui-standalone-preset.js does not match an existing file 
+2024-06-21 21:21:42.5077 INFO Request starting HTTP/1.1 GET http://localhost:5218/swagger/swagger-ui-bundle.js - - 
+2024-06-21 21:21:42.5077 TRACE All hosts are allowed. 
+2024-06-21 21:21:42.5077 DEBUG No candidates found for the request path '/swagger/swagger-ui-bundle.js' 
+2024-06-21 21:21:42.5077 DEBUG Request did not match any endpoints 
+2024-06-21 21:21:42.5077 DEBUG The request path /swagger/swagger-ui-bundle.js does not match an existing file 
+2024-06-21 21:21:42.5077 DEBUG Connection id "0HN4I4TGIFAIV" accepted. 
+2024-06-21 21:21:42.5077 DEBUG Connection id "0HN4I4TGIFAIV" started. 
+2024-06-21 21:21:42.5077 INFO Request starting HTTP/1.1 GET http://localhost:5218/_vs/browserLink - - 
+2024-06-21 21:21:42.5077 DEBUG Connection id "0HN4I4TGIFAJ0" accepted. 
+2024-06-21 21:21:42.5077 DEBUG Connection id "0HN4I4TGIFAJ0" started. 
+2024-06-21 21:21:42.5077 INFO Request starting HTTP/1.1 GET http://localhost:5218/_framework/aspnetcore-browser-refresh.js - - 
+2024-06-21 21:21:42.5077 TRACE Range header's value is empty. 
+2024-06-21 21:21:42.5077 TRACE Range header's value is empty. 
+2024-06-21 21:21:42.5077 TRACE Range header's value is empty. 
+2024-06-21 21:21:42.5211 DEBUG Connection id "0HN4I4TGIFAJ0" completed keep alive response. 
+2024-06-21 21:21:42.5211 INFO Request finished HTTP/1.1 GET http://localhost:5218/_framework/aspnetcore-browser-refresh.js - - - 200 12374 application/javascript;+charset=utf-8 5.3533ms 
+2024-06-21 21:21:42.5862 INFO Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A' 
+2024-06-21 21:21:42.5863 INFO Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A' 
+2024-06-21 21:21:42.5863 DEBUG Connection id "0HN4I4TGIFAIU" completed keep alive response. 
+2024-06-21 21:21:42.5863 DEBUG Connection id "0HN4I4TGIFAIS" completed keep alive response. 
+2024-06-21 21:21:42.5863 INFO Request finished HTTP/1.1 GET http://localhost:5218/swagger/swagger-ui-standalone-preset.js - - - 200 230280 application/javascript 103.9257ms 
+2024-06-21 21:21:42.5863 INFO Request finished HTTP/1.1 GET http://localhost:5218/swagger/swagger-ui.css - - - 200 152034 text/css 105.6860ms 
+2024-06-21 21:21:42.5995 INFO Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A' 
+2024-06-21 21:21:42.5995 DEBUG Connection id "0HN4I4TGIFAIT" completed keep alive response. 
+2024-06-21 21:21:42.5995 INFO Request finished HTTP/1.1 GET http://localhost:5218/swagger/swagger-ui-bundle.js - - - 200 1456926 application/javascript 91.9418ms 
+2024-06-21 21:21:42.6627 DEBUG Connection id "0HN4I4TGIFAIV" completed keep alive response. 
+2024-06-21 21:21:42.6627 INFO Request finished HTTP/1.1 GET http://localhost:5218/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 147.5599ms 
+2024-06-21 21:21:42.9900 INFO Request starting HTTP/1.1 GET http://localhost:5218/swagger/v1/swagger.json - - 
+2024-06-21 21:21:42.9904 TRACE All hosts are allowed. 
+2024-06-21 21:21:42.9904 DEBUG No candidates found for the request path '/swagger/v1/swagger.json' 
+2024-06-21 21:21:42.9904 DEBUG Request did not match any endpoints 
+2024-06-21 21:21:42.9904 DEBUG The request path /swagger/v1/swagger.json does not match an existing file 
+2024-06-21 21:21:43.0236 INFO Request starting HTTP/1.1 GET http://localhost:5218/swagger/favicon-32x32.png - - 
+2024-06-21 21:21:43.0236 TRACE All hosts are allowed. 
+2024-06-21 21:21:43.0236 DEBUG No candidates found for the request path '/swagger/favicon-32x32.png' 
+2024-06-21 21:21:43.0236 DEBUG Request did not match any endpoints 
+2024-06-21 21:21:43.0236 DEBUG The request path /swagger/favicon-32x32.png does not match an existing file 
+2024-06-21 21:21:43.0236 TRACE Range header's value is empty. 
+2024-06-21 21:21:43.0236 INFO Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A' 
+2024-06-21 21:21:43.0236 DEBUG Connection id "0HN4I4TGIFAIT" completed keep alive response. 
+2024-06-21 21:21:43.0236 INFO Request finished HTTP/1.1 GET http://localhost:5218/swagger/favicon-32x32.png - - - 200 628 image/png 0.7182ms 
+2024-06-21 21:21:43.2980 DEBUG Connection id "0HN4I4TGIFAIV" completed keep alive response. 
+2024-06-21 21:21:43.2980 INFO Request finished HTTP/1.1 GET http://localhost:5218/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 308.1483ms 

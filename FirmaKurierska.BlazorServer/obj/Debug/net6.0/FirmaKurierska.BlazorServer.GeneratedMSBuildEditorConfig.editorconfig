@@ -22,8 +22,20 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/tomec/OneDrive/Pulpit/STUDIA/MGR_2SEMESTR/programowanie aplikacji/FirmaKurierska/FirmaKurierska.BlazorServer/Pages/Adresses/AdressList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRyZXNzZXNcQWRyZXNzTGlzdC5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tomec/OneDrive/Pulpit/STUDIA/MGR_2SEMESTR/programowanie aplikacji/FirmaKurierska/FirmaKurierska.BlazorServer/Pages/Clients/ClientList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2xpZW50c1xDbGllbnRMaXN0LnJhem9y
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/tomec/OneDrive/Pulpit/STUDIA/MGR_2SEMESTR/programowanie aplikacji/FirmaKurierska/FirmaKurierska.BlazorServer/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tomec/OneDrive/Pulpit/STUDIA/MGR_2SEMESTR/programowanie aplikacji/FirmaKurierska/FirmaKurierska.BlazorServer/Pages/Couriers/CourierList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291cmllcnNcQ291cmllckxpc3QucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/tomec/OneDrive/Pulpit/STUDIA/MGR_2SEMESTR/programowanie aplikacji/FirmaKurierska/FirmaKurierska.BlazorServer/Pages/FetchData.razor]
@@ -32,6 +44,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/tomec/OneDrive/Pulpit/STUDIA/MGR_2SEMESTR/programowanie aplikacji/FirmaKurierska/FirmaKurierska.BlazorServer/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/tomec/OneDrive/Pulpit/STUDIA/MGR_2SEMESTR/programowanie aplikacji/FirmaKurierska/FirmaKurierska.BlazorServer/Pages/Orders/OrderList.razor]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcT3JkZXJzXE9yZGVyTGlzdC5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/tomec/OneDrive/Pulpit/STUDIA/MGR_2SEMESTR/programowanie aplikacji/FirmaKurierska/FirmaKurierska.BlazorServer/Shared/SurveyPrompt.razor]

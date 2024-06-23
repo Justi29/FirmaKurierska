@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using FirmaKurierska.Domain.Models;
 
-namespace FirmaKurierska.Application.Dto
+namespace FirmaKurierska.SharedKernel.Dto
 {
     public class ClientDto
     {

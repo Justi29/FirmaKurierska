@@ -3,15 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34714.143
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirmaKurierska.Application", "FirmaKurierska.Application\FirmaKurierska.Application.csproj", "{02D34105-8DC8-444C-BD7B-2D48E831290A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirmaKurierska.Application", "FirmaKurierska.Application\FirmaKurierska.Application.csproj", "{02D34105-8DC8-444C-BD7B-2D48E831290A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirmaKurierska.Infrastructure", "FirmaKurierska.Infrastructure\FirmaKurierska.Infrastructure.csproj", "{72A90B29-E5D2-47E6-B728-976B7FF39DAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirmaKurierska.Infrastructure", "FirmaKurierska.Infrastructure\FirmaKurierska.Infrastructure.csproj", "{72A90B29-E5D2-47E6-B728-976B7FF39DAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirmaKurierska.Domain", "FirmaKurierska.Domain\FirmaKurierska.Domain.csproj", "{E10732F4-3E32-4B61-8273-95D167128369}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirmaKurierska.Domain", "FirmaKurierska.Domain\FirmaKurierska.Domain.csproj", "{E10732F4-3E32-4B61-8273-95D167128369}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirmaKurierska.WebAPI", "FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.csproj", "{BAF5EE2C-0CDD-47B8-BFE7-5BFAA3C126BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirmaKurierska.WebAPI", "FirmaKurierska.WebAPI\FirmaKurierska.WebAPI.csproj", "{BAF5EE2C-0CDD-47B8-BFE7-5BFAA3C126BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FirmaKurierska.BlazorServer", "FirmaKurierska.BlazorServer\FirmaKurierska.BlazorServer.csproj", "{A09FA57C-506E-45DD-9A1C-A1769E6BB732}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirmaKurierska.BlazorServer", "FirmaKurierska.BlazorServer\FirmaKurierska.BlazorServer.csproj", "{A09FA57C-506E-45DD-9A1C-A1769E6BB732}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirmaKurierska.SharedKernel", "FirmaKurierska.SharedKernel\FirmaKurierska.SharedKernel.csproj", "{89ACDFB5-3433-4F69-B4BF-94643DF05354}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{A09FA57C-506E-45DD-9A1C-A1769E6BB732}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A09FA57C-506E-45DD-9A1C-A1769E6BB732}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A09FA57C-506E-45DD-9A1C-A1769E6BB732}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89ACDFB5-3433-4F69-B4BF-94643DF05354}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89ACDFB5-3433-4F69-B4BF-94643DF05354}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89ACDFB5-3433-4F69-B4BF-94643DF05354}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89ACDFB5-3433-4F69-B4BF-94643DF05354}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

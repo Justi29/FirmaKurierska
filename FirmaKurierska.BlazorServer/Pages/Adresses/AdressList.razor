@@ -1,0 +1,60 @@
+﻿@page "/adress"
+@inject IAddressService _addressService
+@inject NavigationManager _navigationManager
+@inject IJSRuntime _js
+
+<PageTitle>Adress list</PageTitle>
+<h1>Adress list</h1>
+<div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Country</th>
+                <th>City</th>
+                <th>Post Code</th>
+                <th>Street</th>
+                <th>ClientId</th>
+                <th>Action</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var a in _addressList)
+            {
+                <tr>
+                    <td>@a.Id</td>
+                    <td>@a.Country</td>
+                    <td>@a.City</td>
+                    <td>@a.PostCode</td>
+                    <td>@a.Street</td>
+                    <td>@a.ClientId</td>
+                    <td>
+                        <button class="btn bg-danger" @onclick="()=>DeleteAddress((int)a.Id)"> Delete </button>
+                    </td>
+
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</div>
+@code {
+    private List<AddressDto> _addressList = null;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        _addressList = _addressService.GetAll();
+    }
+    protected async Task DeleteAddress(int id)
+    {
+        var address = _addressList.First(q => q.Id == id);
+        var confirm = await _js.InvokeAsync<bool>("confirm", $"Are You Sure You Want To Delete address {address.Id}?");
+        if (confirm)
+        {
+            _addressService.Delete(id);
+            OnInitialized();
+        }
+    }
+} 

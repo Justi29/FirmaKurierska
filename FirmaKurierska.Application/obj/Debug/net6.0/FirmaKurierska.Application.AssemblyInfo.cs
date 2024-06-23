@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FirmaKurierska.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1b18e093ed0fd3b8507c4587386caec7643c395c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("FirmaKurierska.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FirmaKurierska.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,5 +1,5 @@
 ﻿using System;
-using FirmaKurierska.Application.Dto;
+using FirmaKurierska.SharedKernel.Dto;
 
 namespace FirmaKurierska.Application.Services
 {
