@@ -1,0 +1,130 @@
+﻿@page "/order/edit/{id:int}"
+@inject IOrderService _orderService
+@inject NavigationManager _navigationManager
+
+<PageTitle>Edit order</PageTitle>
+<h1>Edit order</h1>
+
+<EditForm Model="@_order" OnValidSubmit="@UpdateOrder">
+    <FluentValidationValidator @ref="_fluentValidationValidator" DisableAssemblyScanning="@true" />
+    <ValidationSummary />
+    <div class="form-group">
+        <label>Status: </label>
+        <InputSelect @bind-Value="@_order.Status" class="form-control">
+            @foreach (var status in Enum.GetValues(typeof(OrderStatus)))
+            {
+                <option value="@status">@status</option>
+            }
+        </InputSelect>
+        <ValidationMessage For="@(() => _order.Status)" />
+    </div>
+    <div class="form-group">
+        <label>Size: </label>
+        <InputSelect @bind-Value="@_order.Size" class="form-control">
+            @foreach (var size in Enum.GetValues(typeof(OrderSize)))
+            {
+                <option value="@size">@size</option>
+            }
+        </InputSelect>
+        <ValidationMessage For="@(() => _order.Size)" />
+    </div>
+    <div class="form-group">
+        <label>Total Cost: </label>
+        <InputNumber @bind-Value="@_order.TotalCost" class="form-control" />
+        <ValidationMessage For="@(() => _order.TotalCost)" />
+    </div>
+    <div class="form-group">
+        <label>Pickup Location: </label>
+        <InputText @bind-Value="@_order.PickupLocation.Street" class="form-control" readonly />
+        <InputText @bind-Value="@_order.PickupLocation.City" class="form-control" readonly />
+        <InputText @bind-Value="@_order.PickupLocation.PostCode" class="form-control" readonly />
+        <InputText @bind-Value="@_order.PickupLocation.Country" class="form-control" readonly />
+@*         <ValidationMessage For="@(() => _order.PickupLocation.Street)" /> *@
+    </div>
+    <div class="form-group">
+        <label>Destination: </label>
+        <InputText @bind-Value="@_order.Destination.Street" class="form-control" readonly />
+        <InputText @bind-Value="@_order.Destination.City" class="form-control" readonly />
+        <InputText @bind-Value="@_order.Destination.PostCode" class="form-control" readonly />
+        <InputText @bind-Value="@_order.Destination.Country" class="form-control" readonly />
+@*         <ValidationMessage For="@(() => _order.Destination.Street)" /> *@
+    </div>
+    <div class="form-group">
+        <label>Shipping Date: </label>
+        <InputDate @bind-Value="@_order.ShippingDate" class="form-control" />
+        <ValidationMessage For="@(() => _order.ShippingDate)" />
+    </div>
+    <div class="form-group">
+        <label>Pickup Date: </label>
+        <InputDate @bind-Value="@_order.PickupDate" class="form-control" />
+        <ValidationMessage For="@(() => _order.PickupDate)" />
+    </div>
+    <div class="form-group">
+        <label>Delivery Date: </label>
+        <InputDate @bind-Value="@_order.DeliveryDate" class="form-control" />
+        <ValidationMessage For="@(() => _order.DeliveryDate)" />
+    </div>
+    <div class="form-group">
+        <label>Courier ID: </label>
+        <InputNumber @bind-Value="@_order.CourierId" class="form-control" />
+        <ValidationMessage For="@(() => _order.CourierId)" />
+    </div>
+    <br />
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit"> <span class="oi oi-pencil"></span> Update </button>
+        <button @onclick="BackToList" class="btn btn-secondary" type="button">
+            <span class="oi oi-media-skip-backward" />
+            Back To List
+        </button>
+    </div>
+</EditForm>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private FluentValidationValidator? _fluentValidationValidator;
+    private UpdateOrderDto _order = new UpdateOrderDto();
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        var o = _orderService.GetById(Id);
+        _order = new UpdateOrderDto()
+            {
+                Id = o.Id,
+                Status = o.Status,
+                Size = o.Size,
+                TotalCost = (double?)o.TotalCost,
+                PickupLocation = new AddressDto
+                {
+                    Street = o.PickupLocation.Street,
+                    City = o.PickupLocation.City,
+                    PostCode = o.PickupLocation.PostCode,
+                    Country = o.PickupLocation.Country
+                },
+                Destination = new AddressDto
+                {
+                    Street = o.Destination.Street,
+                    City = o.Destination.City,
+                    PostCode = o.Destination.PostCode,
+                    Country = o.Destination.Country
+                },
+                ShippingDate = o.ShippingDate,
+                PickupDate = o.PickupDate,
+                DeliveryDate = o.DeliveryDate,
+                CourierId = o.CourierId
+            };
+    }
+
+    private void UpdateOrder()
+    {
+        _orderService.Update(_order);
+        _navigationManager.NavigateTo("/order");
+    }
+
+    private void BackToList()
+    {
+        _navigationManager.NavigateTo("/order");
+    }
+}

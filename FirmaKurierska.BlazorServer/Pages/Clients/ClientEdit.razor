@@ -1,0 +1,83 @@
+﻿@page "/client/edit/{id:int}"
+@inject IClientService _clientService
+@inject NavigationManager _navigationManager
+
+<PageTitle>Edit client</PageTitle>
+<h1>Edit client</h1>
+
+<EditForm Model="@_client" OnValidSubmit="@UpdateClient">
+    <FluentValidationValidator @ref="_fluentValidationValidator" DisableAssemblyScanning="@true" />
+    <ValidationSummary />
+    <div class="form-group">
+        <label>Name: </label>
+        <InputText @bind-Value="@_client.Name" class="form-control" />
+        <ValidationMessage For="@(() => _client.Name)" />
+    </div>
+    <div class="form-group">
+        <label>Surname: </label>
+        <InputText @bind-Value="@_client.Surname" class="form-control" />
+        <ValidationMessage For="@(() => _client.Surname)" />
+    </div>
+    <div class="form-group">
+        <label>PhoneNumber: </label>
+        <InputText @bind-Value="@_client.PhoneNumber" class="form-control" />
+        <ValidationMessage For="@(() => _client.PhoneNumber)" />
+    </div>
+    <div class="form-group">
+        <label>Email: </label>
+        <InputText @bind-Value="@_client.Email" class="form-control" />
+        <ValidationMessage For="@(() => _client.Email)" />
+    </div>
+    <div class="form-group">
+        <label>Is Company: </label>
+        <InputCheckbox @bind-Value="@_client.IsCompany" class="form-check-input" />
+        <ValidationMessage For="@(() => _client.IsCompany)" />
+    </div>
+    <div class="form-group">
+        <label>NIP: </label>
+        <InputText @bind-Value="@_client.NIP" class="form-control" />
+        <ValidationMessage For="@(() => _client.NIP)" />
+    </div>
+    <br />
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit"> <span class="oi oi-pencil"></span> Update </button>
+        <button @onclick="BackToList" class="btn btn-secondary" type="button">
+            <span class="oi oi-media-skip-backward"></span>
+            Back To List
+        </button>
+    </div>
+</EditForm>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+    private FluentValidationValidator? _fluentValidationValidator;
+    private ClientDto _client = null;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        var c = _clientService.GetById(Id);
+        _client = new ClientDto()
+            {
+                Id = c.Id,
+                Name = c.Name,
+                Surname = c.Surname,
+                PhoneNumber = c.PhoneNumber,
+                Email = c.Email,
+                IsCompany = c.IsCompany,
+                NIP = c.NIP
+            };
+    }
+
+    private void UpdateClient()
+    {
+        _clientService.Update(_client);
+        _navigationManager.NavigateTo("/client");
+    }
+
+    private void BackToList()
+    {
+        _navigationManager.NavigateTo("/client");
+    }
+}

@@ -23,6 +23,7 @@ builder.Services.AddSingleton<WeatherForecastService>();
 // rejestracja automappera w kontenerze IoC
 builder.Services.AddAutoMapper(typeof(FirmaKurierskaMappingProfile));
 // rejestracja automatycznej walidacji (FluentValidation waliduje i przekazuje wynik przez ModelState)
+builder.Services.AddFluentValidation();
 builder.Services.AddFluentValidationAutoValidation();
 // rejestracja kontekstu bazy w kontenerze IoC
 var sqliteConnectionString = "Data Source=FirmaKurierska.WebAPI.db";

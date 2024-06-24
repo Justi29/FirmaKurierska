@@ -1,10 +1,15 @@
 ﻿@page "/courier"
 @inject ICourierService _courierService
 @inject IJSRuntime _js
+@inject NavigationManager _navigationManager
 <PageTitle>Courier list</PageTitle>
 <h1>Courier list</h1>
 
 <div>
+    <div>
+        <a href="courier/create" class="btn bg-primary"><span class="oi oi-plus" aria-hidden="true"></span> Create new courier </a>
+    </div>
+    <br />
     <table class="table">
         <thead>
             <tr>
@@ -29,6 +34,10 @@
                     <td>
                         <button class="btn bg-danger" @onclick="()=>DeleteCourier(c.Id)"> Delete </button>
                     </td>
+                    <button class="btn bg-warning" @onclick="@(()=>EditCourier(@c.Id))">
+                        <span class="oi oi-pencil" aria-hidden="true"></span>
+                        Edit
+                    </button>
                 </tr>
             }
         </tbody>
@@ -50,5 +59,9 @@
             _courierService.Delete(id);
             OnInitialized();
         }
+    }
+    protected void EditCourier(int id)
+    {
+        _navigationManager.NavigateTo($"courier/edit/{id}");
     }
 } 

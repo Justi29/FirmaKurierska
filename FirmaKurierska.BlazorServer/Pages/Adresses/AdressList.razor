@@ -6,6 +6,10 @@
 <PageTitle>Address list</PageTitle>
 <h1>Address list</h1>
 <div>
+    <div>
+        <a href="address/create" class="btn bg-primary"><span class="oi oi-plus" aria-hidden="true"></span> Create new address </a>
+    </div>
+    <br />
     <table class="table">
         <thead>
             <tr>
@@ -32,6 +36,10 @@
                     <td>
                         <button class="btn bg-danger" @onclick="()=>DeleteAddress((int)a.Id)"> Delete </button>
                     </td>
+                    <button class="btn bg-warning" @onclick="@(()=>EditAddress((int)@a.Id))">
+                        <span class="oi oi-pencil" aria-hidden="true"></span>
+                        Edit
+                    </button>
 
                 </tr>
             }
@@ -56,5 +64,9 @@
             _addressService.Delete(id);
             OnInitialized();
         }
+    }
+    protected void EditAddress(int id)
+    {
+        _navigationManager.NavigateTo($"address/edit/{id}");
     }
 } 

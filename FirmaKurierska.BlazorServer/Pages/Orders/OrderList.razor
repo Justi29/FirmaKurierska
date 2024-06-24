@@ -1,6 +1,7 @@
 ﻿@page "/order"
 @inject IOrderService _orderService
 @inject IJSRuntime _js
+@inject NavigationManager _navigationManager
 <PageTitle>Order list</PageTitle>
 <h1>Order list</h1>
 
@@ -30,16 +31,21 @@
                     <td>@o.Status</td>
                     <td>@o.Size</td>
                     <td>@o.TotalCost</td>
-                    <td>@o.PickupLocation</td>
-                    <td>@o.Destination</td>
-                    <td>@o.ShippingDate</td>
-                    <td>@o.PickupDate</td>
-                    <td>@o.DeliveryDate</td>
+                    <td>@o.PickupLocation.Street, @o.PickupLocation.City, @o.PickupLocation.PostCode, @o.PickupLocation.Country</td>
+                    <td>@o.Destination.Street, @o.Destination.City, @o.Destination.PostCode, @o.Destination.Country</td>
+                    <td>@o.ShippingDate.ToString("yyyy-MM-dd")</td>
+                    <td>@(o.PickupDate.HasValue ? o.PickupDate.Value.ToString("yyyy-MM-dd") : "-")</td>
+                    <td>@(o.DeliveryDate.HasValue ? o.DeliveryDate.Value.ToString("yyyy-MM-dd") : "-")</td>
                     <td>@o.ClientId</td>
                     <td>@o.CourierId</td>
                     <td>
                         <button class="btn bg-danger" @onclick="()=>DeleteOrder(o.Id)"> Delete </button>
                     </td>
+                    <button class="btn bg-warning" @onclick="@(()=>EditOrder(@o.Id))">
+                        <span class="oi oi-pencil" aria-hidden="true"></span>
+                        Edit
+                    </button>
+
                 </tr>
             }
         </tbody>
@@ -61,5 +67,9 @@
             _orderService.Delete(id);
             OnInitialized();
         }
+    }
+    protected void EditOrder(int id)
+    {
+        _navigationManager.NavigateTo($"order/edit/{id}");
     }
 } 

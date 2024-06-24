@@ -1,0 +1,72 @@
+﻿@page "/address/edit/{id:int}"
+@inject IAddressService _addressService
+@inject NavigationManager _navigationManager
+
+<PageTitle>Edit address</PageTitle>
+<h1>Edit address</h1>
+
+<EditForm Model="@_address" OnValidSubmit="@UpdateAddress">
+    <FluentValidationValidator @ref="_fluentValidationValidator" DisableAssemblyScanning="@true" />
+    <ValidationSummary />
+    <div class="form-group">
+        <label>Country: </label>
+        <InputText @bind-Value="@_address.Country" class="form-control" />
+        <ValidationMessage For="@(() => _address.Country)" />
+    </div>
+    <div class="form-group">
+        <label>City: </label>
+        <InputText @bind-Value="@_address.City" class="form-control" />
+        <ValidationMessage For="@(() => _address.City)" />
+    </div>
+    <div class="form-group">
+        <label>PostCode: </label>
+        <InputText @bind-Value="@_address.PostCode" class="form-control" />
+        <ValidationMessage For="@(() => _address.PostCode)" />
+    </div>
+    <div class="form-group">
+        <label>Street: </label>
+        <InputText @bind-Value="@_address.Street" class="form-control" />
+        <ValidationMessage For="@(() => _address.Street)" />
+    </div>
+    <br />
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit"> <span class="oi oi-pencil"></span> Update </button>
+        <button @onclick="BackToList" class="btn btn-secondary" type="button">
+            <span class="oi oi-media-skip-backward" />
+            Back To List
+        </button>
+    </div>
+</EditForm>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private FluentValidationValidator? _fluentValidationValidator;
+    private UpdateAddressDto _address = null;
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+        var a = _addressService.GetById(Id);
+        _address = new UpdateAddressDto()
+            {
+                Id = (int)a.Id,
+                Country = a.Country,
+                City = a.City,
+                PostCode = a.PostCode,
+                Street = a.Street
+            };
+    }
+
+    private void UpdateAddress()
+    {
+        _addressService.Update(_address);
+        _navigationManager.NavigateTo("/address");
+    }
+
+    private void BackToList()
+    {
+        _navigationManager.NavigateTo("/address");
+    }
+}

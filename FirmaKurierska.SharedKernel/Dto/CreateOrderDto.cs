@@ -11,7 +11,7 @@ namespace FirmaKurierska.SharedKernel.Dto
     {
         public OrderStatus Status { get; set; }
         public OrderSize Size { get; set; }
-        public decimal TotalCost { get; set; }
+        public double TotalCost { get; set; }
         public AddressDto PickupLocation { get; set; }
         public AddressDto Destination { get; set; }
         public DateTime ShippingDate { get; set; }

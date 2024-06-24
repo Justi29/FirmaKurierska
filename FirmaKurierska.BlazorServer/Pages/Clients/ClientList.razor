@@ -1,9 +1,14 @@
 ﻿@page "/client"
 @inject IClientService _clientService
 @inject IJSRuntime _js
+@inject NavigationManager _navigationManager
 <PageTitle>Client list</PageTitle>
 <h1>Client list</h1>
 <div>
+    <div>
+        <a href="client/create" class="btn bg-primary"><span class="oi oi-plus" aria-hidden="true"></span> Create new client </a>
+    </div>
+    <br />
     <table class="table">
         <thead>
             <tr>
@@ -31,6 +36,10 @@
                     <td>
                         <button class="btn bg-danger" @onclick="()=>DeleteClient(c.Id)"> Delete </button>
                     </td>
+                    <button class="btn bg-warning" @onclick="@(()=>EditClient(@c.Id))">
+                        <span class="oi oi-pencil" aria-hidden="true"></span>
+                        Edit
+                    </button>
 
                 </tr>
             }
@@ -54,5 +63,9 @@
             _clientService.Delete(id);
             OnInitialized();
         }
+    }
+    protected void EditClient(int id)
+    {
+        _navigationManager.NavigateTo($"client/edit/{id}");
     }
 } 

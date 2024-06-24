@@ -1,0 +1,55 @@
+﻿@page "/courier/create"
+@inject ICourierService _courierService
+@inject NavigationManager _navigationManager
+
+<PageTitle>Create courier</PageTitle>
+<h1>Create courier</h1>
+
+<EditForm Model="@_courier" OnValidSubmit="@CreateCourier">
+    <FluentValidationValidator @ref="_fluentValidationValidator" DisableAssemblyScanning="@true" />
+    <ValidationSummary />
+    <div class="form-group">
+        <label>Name: </label>
+        <InputText @bind-Value="@_courier.Name" class="form-control" />
+        <ValidationMessage For="@(() => _courier.Name)" />
+    </div>
+    <div class="form-group">
+        <label>Surname: </label>
+        <InputText @bind-Value="@_courier.Surname" class="form-control" />
+        <ValidationMessage For="@(() => _courier.Surname)" />
+    </div>
+    <div class="form-group">
+        <label>PhoneNumber: </label>
+        <InputText @bind-Value="@_courier.PhoneNumber" class="form-control" />
+        <ValidationMessage For="@(() => _courier.PhoneNumber)" />
+    </div>
+    <div class="form-group">
+        <label>Email: </label>
+        <InputText @bind-Value="@_courier.Email" class="form-control" />
+        <ValidationMessage For="@(() => _courier.Email)" />
+    </div>
+    <br />
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit"> <span class="oi oi-plus"></span> Create </button>
+        <button @onclick="BackToList" class="btn btn-secondary" type="button">
+            <span class="oi oi-media-skip-backward" />
+            Back To List
+        </button>
+    </div>
+</EditForm>
+
+@code {
+    private FluentValidationValidator? _fluentValidationValidator;
+    private CourierDto _courier = new CourierDto();
+
+    private void CreateCourier()
+    {
+        var newId = _courierService.Create(_courier);
+        _navigationManager.NavigateTo($"/courier");
+    }
+
+    private void BackToList()
+    {
+        _navigationManager.NavigateTo("/courier");
+    }
+}
