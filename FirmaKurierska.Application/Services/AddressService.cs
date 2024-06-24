@@ -21,14 +21,14 @@ namespace FirmaKurierska.Application.Services
         {
             if (dto == null)
             {
-                throw new BadRequestException("Adress is null");
+                throw new BadRequestException("Address is null");
             }
 
             var id = _uow.AddressRepository.GetMaxId() + 1;
-            var adress = _mapper.Map<Address>(dto);
-            adress.Id = id;
+            var address = _mapper.Map<Address>(dto);
+            address.Id = id;
 
-            _uow.AddressRepository.Insert(adress);
+            _uow.AddressRepository.Insert(address);
             _uow.Commit();
 
             return id;
