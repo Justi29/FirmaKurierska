@@ -1,14 +1,23 @@
-﻿@page "/courier"
+﻿@page "/courier/view"
 
 @inject ICourierService _courierService
 @inject IJSRuntime Js
 @inject NavigationManager NavigationManager
 @inject AppState _appState
 
-<PageTitle>Deliveries</PageTitle>
+<PageTitle>My profile</PageTitle>
 
-<h1>Hello @_courier.Name</h1>
+<h2>Hello @_courier.Name !</h2>
+<br />
 
+<h4>Account Details:</h4>
+
+<div>
+    <p><strong>Name:</strong> @_courier.Name</p>
+    <p><strong>Surname:</strong> @_courier.Surname</p>
+    <p><strong>Phone Number:</strong> @_courier.PhoneNumber</p>
+    <p><strong>Email:</strong> @_courier.Email</p>
+</div>
 
 @code {
     private CourierDto _courier = new CourierDto();

@@ -18,7 +18,7 @@ namespace FirmaKurierska.BlazorClient.Services
 
         public async Task<CourierDto> GetById(int id)
         {
-            var response = await _httpClient.GetAsync($"http://localhost:5218/{id}");
+            var response = await _httpClient.GetAsync($"http://localhost:5218/Courier/{id}");
             if (response.IsSuccessStatusCode)
             {
                 var content = await response.Content.ReadAsStringAsync();

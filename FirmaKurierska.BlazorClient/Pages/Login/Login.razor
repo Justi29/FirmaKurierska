@@ -16,7 +16,7 @@
         _appState.IsCourierLoggedIn = false;
         _appState.ClientId = 1; // Assume client ID 1 for now
         await Task.Delay(100);
-        _navigationManager.NavigateTo($"/client/view/1");
+        _navigationManager.NavigateTo($"/client/view");
     }
 
     private async Task NavigateToCourier()
@@ -25,6 +25,6 @@
         _appState.IsCourierLoggedIn = true;
         _appState.CourierId = 1; // Assume client ID 1 for now
         await Task.Delay(100);
-        _navigationManager.NavigateTo("/deliveries");
+        _navigationManager.NavigateTo("/courier/view");
     }
 }
