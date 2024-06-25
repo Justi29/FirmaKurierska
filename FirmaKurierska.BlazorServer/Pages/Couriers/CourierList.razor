@@ -18,8 +18,9 @@
                 <th>Surname</th>
                 <th>PhoneNumber</th>
                 <th>Email</th>
-                <th>Action</th>
-
+                <th>Photo</th>
+                <th>Delete</th>
+                <th>Edit</th>
             </tr>
         </thead>
         <tbody>
@@ -31,6 +32,9 @@
                     <td>@c.Surname</td>
                     <td>@c.PhoneNumber</td>
                     <td>@c.Email</td>
+                    <td>
+                        <img src="@c.ImageUrl" width="64">
+                    </td>
                     <td>
                         <button class="btn bg-danger" @onclick="()=>DeleteCourier(c.Id)"> Delete </button>
                     </td>

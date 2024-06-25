@@ -11,6 +11,7 @@ using FirmaKurierska.Application.Mappings;
 using FirmaKurierska.Infrastructure.Repositories;
 using FirmaKurierska.Application.Services;
 using FirmaKurierska.SharedKernel.Dto;
+using FirmaKurierska.BlazorServer.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,6 +42,8 @@ builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddScoped<IClientService, ClientService>();
 builder.Services.AddScoped<ICourierService, CourierService>();
 builder.Services.AddScoped<IOrderService, OrderService>();
+builder.Services.AddScoped<IFileService, FileService>();
+
 
 
 var app = builder.Build();

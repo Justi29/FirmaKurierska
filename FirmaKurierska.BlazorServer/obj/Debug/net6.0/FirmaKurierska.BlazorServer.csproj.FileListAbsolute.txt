@@ -294,3 +294,13 @@ C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\
 C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.BlazorServer\obj\Debug\net6.0\FirmaKurierska.BlazorServer.pdb
 C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.BlazorServer\obj\Debug\net6.0\FirmaKurierska.BlazorServer.genruntimeconfig.cache
 C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.BlazorServer\obj\Debug\net6.0\ref\FirmaKurierska.BlazorServer.dll
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.BlazorServer\bin\Debug\net6.0\Blazored.FluentValidation.dll
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.BlazorServer\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.BlazorServer\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.BlazorServer\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.BlazorServer\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.BlazorServer\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.BlazorServer\bin\Debug\net6.0\Microsoft.JSInterop.dll
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.BlazorServer\bin\Debug\net6.0\System.IO.Pipelines.dll
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.BlazorServer\bin\Debug\net6.0\FirmaKurierska.SharedKernel.dll
+C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.BlazorServer\bin\Debug\net6.0\FirmaKurierska.SharedKernel.pdb

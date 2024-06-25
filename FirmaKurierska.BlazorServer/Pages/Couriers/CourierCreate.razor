@@ -1,5 +1,7 @@
 ﻿@page "/courier/create"
+@using FirmaKurierska.BlazorServer.Service
 @inject ICourierService _courierService
+@inject IFileService _fileService
 @inject NavigationManager _navigationManager
 
 <PageTitle>Create courier</PageTitle>
@@ -28,6 +30,11 @@
         <InputText @bind-Value="@_courier.Email" class="form-control" />
         <ValidationMessage For="@(() => _courier.Email)" />
     </div>
+    <div class="form-group">
+        <label>Image: </label>
+        <InputFile OnChange="HandleImageUpload"></InputFile>
+    </div>
+
     <br />
     <div class="form-group">
         <button class="btn btn-primary" type="submit"> <span class="oi oi-plus"></span> Create </button>
@@ -51,5 +58,27 @@
     private void BackToList()
     {
         _navigationManager.NavigateTo("/courier");
+    }
+
+    private async Task HandleImageUpload(InputFileChangeEventArgs e)
+    {
+        if (e.GetMultipleFiles().Count > 0)
+        {
+            foreach (var file in e.GetMultipleFiles())
+            {
+                System.IO.FileInfo fileInfo = new System.IO.FileInfo(file.Name);
+                if (fileInfo.Extension.ToLower() == ".jpg" ||
+                fileInfo.Extension.ToLower() == ".png" ||
+                fileInfo.Extension.ToLower() == ".jpeg")
+                {
+                    _courier.ImageUrl = await _fileService.UploadFile(file);
+                }
+                else
+                {
+                    // komunikat o błędzie
+                    return;
+                }
+            }
+        }
     }
 }
