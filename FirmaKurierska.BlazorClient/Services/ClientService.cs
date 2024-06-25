@@ -1,5 +1,5 @@
-﻿using FirmaKurierska.SharedKernel.Dto;
-using static FirmaKurierska.BlazorClient.Pages.Clients.ClientList;
+﻿using FirmaKurierska.Domain.Models;
+using FirmaKurierska.SharedKernel.Dto;
 using Newtonsoft.Json;
 
 
@@ -23,6 +23,18 @@ namespace FirmaKurierska.BlazorClient.Services
                 return clients;
             }
             return new List<ClientDto>();
+        }
+
+        public async Task<ClientDto> GetById(int clientId)
+        {
+            var response = await _httpClient.GetAsync($"http://localhost:5218/Client/{clientId}");
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                var result = JsonConvert.DeserializeObject<ClientDto>(content);
+                return result;
+            }
+            return new ClientDto();
         }
     }
 }

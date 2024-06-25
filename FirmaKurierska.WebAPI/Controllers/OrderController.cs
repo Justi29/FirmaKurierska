@@ -31,6 +31,15 @@ namespace FirmaKurierska.WebAPI.Controllers
             return Ok(result);
         }
 
+        [HttpGet("withoutCourier", Name = "GetOrdersWithoutCourier")]
+        public ActionResult<IEnumerable<OrderDto>> GetOrdersWithoutCourier()
+        {
+            _logger.LogDebug("Rozpoczęto pobieranie listy wszystkich zamówień bez przypisanego kuriera");
+            var result = _orderService.GetAllWithoutCourier();
+            _logger.LogDebug("Pobrano listę wszystkich zamówień bez przydzielonego kuriera.");
+            return Ok(result);
+        }
+
         [HttpGet("client/{clientId}", Name = "GetOrdersForClient")]
         public ActionResult<IEnumerable<OrderDto>> GetForClient(int clientId)
         {

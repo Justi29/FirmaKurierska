@@ -5,6 +5,7 @@ namespace FirmaKurierska.Application.Services
     public interface IOrderService
     {
         List<OrderDto> GetAll();
+        List<OrderDto> GetAllWithoutCourier();
         OrderDto GetById(int id);
         int Create(CreateOrderDto dto);
         List<OrderDto> GetAllForClient(int clientId);

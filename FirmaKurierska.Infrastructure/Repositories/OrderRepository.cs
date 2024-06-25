@@ -23,6 +23,10 @@ namespace FirmaKurierska.Infrastructure.Repositories
         {
             return _kioskDbContext.Orders.Include(a => a.PickupLocation).Include(a => a.Destination).ToList();
         }
+        public List<Order> GetAllWithoutCourier()
+        {
+            return _kioskDbContext.Orders.Where(a => a.CourierId == null).Include(a => a.PickupLocation).Include(a => a.Destination).ToList();
+        }
         public List<Order> GetAllForClient(int clientId)
         {
             return _kioskDbContext.Orders.Where(o => o.ClientId == clientId).Include(a => a.PickupLocation).Include(a => a.Destination).ToList();

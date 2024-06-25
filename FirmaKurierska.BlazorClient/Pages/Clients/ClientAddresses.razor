@@ -1,0 +1,52 @@
+﻿@page "/client/addresses"
+@inject IAddressService AddressService
+@inject IJSRuntime Js
+@inject NavigationManager NavigationManager
+@inject AppState _appState
+
+<PageTitle>Client Addresses</PageTitle>
+
+<h1>Client Addresses</h1>
+
+<div>
+    <h2>Addresses</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Street</th>
+                <th>City</th>
+                <th>PostCode</th>
+                <th>Country</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var address in _addressList)
+            {
+                <tr>
+                    <td>@address.Id</td>
+                    <td>@address.Street</td>
+                    <td>@address.City</td>
+                    <td>@address.PostCode</td>
+                    <td>@address.Country</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@code {
+    [Parameter]
+    public int Id { get; set; }
+
+    private List<OrderDto> _orderList = new List<OrderDto>();
+    private List<AddressDto> _addressList = new List<AddressDto>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (_appState.ClientId.HasValue)
+        {
+            _addressList = (await AddressService.GetAllForClient(_appState.ClientId.Value)).ToList();
+        }
+    }
+}
