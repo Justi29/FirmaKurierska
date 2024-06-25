@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "FirmaKurierska.WebAPI/1.0.0": {
         "dependencies": {
+          "AutoMapper": "13.0.1",
           "FirmaKurierska.Application": "1.0.0",
           "FirmaKurierska.Infrastructure": "1.0.0",
           "FirmaKurierska.SharedKernel": "1.0.0",

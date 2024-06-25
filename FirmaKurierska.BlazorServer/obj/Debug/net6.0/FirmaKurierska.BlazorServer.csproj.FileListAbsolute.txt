@@ -184,3 +184,11 @@ C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.BlazorServer\obj\Debug\
 C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.BlazorServer\obj\Debug\net6.0\ref\FirmaKurierska.BlazorServer.dll
 C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.BlazorServer\bin\Debug\net6.0\FirmaKurierska.SharedKernel.dll
 C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.BlazorServer\bin\Debug\net6.0\FirmaKurierska.SharedKernel.pdb
+C:\Users\AWA5\source\repos\FirmaKurierska\FirmaKurierska.BlazorServer\bin\Debug\net6.0\Blazored.FluentValidation.dll
+C:\Users\AWA5\source\repos\FirmaKurierska\FirmaKurierska.BlazorServer\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\AWA5\source\repos\FirmaKurierska\FirmaKurierska.BlazorServer\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
+C:\Users\AWA5\source\repos\FirmaKurierska\FirmaKurierska.BlazorServer\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\AWA5\source\repos\FirmaKurierska\FirmaKurierska.BlazorServer\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\AWA5\source\repos\FirmaKurierska\FirmaKurierska.BlazorServer\bin\Debug\net6.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\AWA5\source\repos\FirmaKurierska\FirmaKurierska.BlazorServer\bin\Debug\net6.0\Microsoft.JSInterop.dll
+C:\Users\AWA5\source\repos\FirmaKurierska\FirmaKurierska.BlazorServer\bin\Debug\net6.0\System.IO.Pipelines.dll

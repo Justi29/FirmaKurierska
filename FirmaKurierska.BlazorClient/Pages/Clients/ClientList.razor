@@ -1,0 +1,30 @@
+﻿@page "/client"
+@using FirmaKurierska.BlazorClient.Services
+@inject IClientService _clientService
+@inject NavigationManager _navigationManager
+
+<PageTitle>Client list</PageTitle>
+<h3>Client list</h3>
+<div class="row">
+    @foreach (var c in _clientList)
+    {
+        <div class="card m-2" style="width: 18rem;">
+            <div class="card-body">
+                <h5 class="card-title">@c.Id</h5>
+                <p class="card-text">@c.Name</p>
+                <p>
+                    <a class="btn btn-primary" href="client/@c.Id">View Details</a>
+                </p>
+            </div>
+        </div>
+    }
+</div>
+
+@code {
+    private IEnumerable<ClientDto> _clientList = new List<ClientDto>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        _clientList = await _clientService.GetAll();
+    }
+}
