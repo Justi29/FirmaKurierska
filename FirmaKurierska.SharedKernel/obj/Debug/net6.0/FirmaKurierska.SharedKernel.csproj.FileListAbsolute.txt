@@ -46,3 +46,19 @@ C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\
 C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.SharedKernel\obj\Debug\net6.0\refint\FirmaKurierska.SharedKernel.dll
 C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.SharedKernel\obj\Debug\net6.0\FirmaKurierska.SharedKernel.pdb
 C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.SharedKernel\obj\Debug\net6.0\ref\FirmaKurierska.SharedKernel.dll
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.SharedKernel\bin\Debug\net6.0\FirmaKurierska.SharedKernel.deps.json
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.SharedKernel\bin\Debug\net6.0\FirmaKurierska.SharedKernel.dll
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.SharedKernel\bin\Debug\net6.0\FirmaKurierska.SharedKernel.pdb
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.SharedKernel\bin\Debug\net6.0\FirmaKurierska.Domain.dll
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.SharedKernel\bin\Debug\net6.0\FirmaKurierska.Domain.pdb
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.SharedKernel\obj\Debug\net6.0\FirmaKurierska.SharedKernel.csproj.AssemblyReference.cache
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.SharedKernel\obj\Debug\net6.0\FirmaKurierska.SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.SharedKernel\obj\Debug\net6.0\FirmaKurierska.SharedKernel.AssemblyInfoInputs.cache
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.SharedKernel\obj\Debug\net6.0\FirmaKurierska.SharedKernel.AssemblyInfo.cs
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.SharedKernel\obj\Debug\net6.0\FirmaKurierska.SharedKernel.csproj.CoreCompileInputs.cache
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.SharedKernel\obj\Debug\net6.0\FirmaKurierska.SharedKernel.sourcelink.json
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.SharedKernel\obj\Debug\net6.0\FirmaKurierska.SharedKernel.csproj.CopyComplete
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.SharedKernel\obj\Debug\net6.0\FirmaKurierska.SharedKernel.dll
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.SharedKernel\obj\Debug\net6.0\refint\FirmaKurierska.SharedKernel.dll
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.SharedKernel\obj\Debug\net6.0\FirmaKurierska.SharedKernel.pdb
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.SharedKernel\obj\Debug\net6.0\ref\FirmaKurierska.SharedKernel.dll

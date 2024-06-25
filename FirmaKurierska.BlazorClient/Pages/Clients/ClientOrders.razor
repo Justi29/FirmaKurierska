@@ -10,6 +10,10 @@
 
 <div>
     <h2>Orders</h2>
+    <div>
+        <a href="order/create" class="btn bg-primary"><span class="oi oi-plus" aria-hidden="true"></span> Create new order </a>
+    </div>
+    <br />
     <table class="table">
         <thead>
             <tr>
@@ -22,8 +26,8 @@
                 <th>ShippingDate</th>
                 <th>PickupDate</th>
                 <th>DeliveryDate</th>
-                <th>ClientId</th>
-                <th>CourierId</th>
+                <th>Courier</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -39,8 +43,10 @@
                     <td>@order.ShippingDate.ToString("yyyy-MM-dd")</td>
                     <td>@(order.PickupDate.HasValue ? order.PickupDate.Value.ToString("yyyy-MM-dd") : "-")</td>
                     <td>@(order.DeliveryDate.HasValue ? order.DeliveryDate.Value.ToString("yyyy-MM-dd") : "-")</td>
-                    <td>@order.ClientId</td>
                     <td>@order.CourierId</td>
+                    <td>
+                        <button class="btn bg-danger" @onclick="()=>DeleteOrder((int)order.Id)"> Delete </button>
+                    </td>
                 </tr>
             }
         </tbody>
@@ -48,9 +54,6 @@
 </div>
 
 @code {
-    [Parameter]
-    public int Id { get; set; }
-
     private List<OrderDto> _orderList = new List<OrderDto>();
 
     protected override async Task OnInitializedAsync()
@@ -59,5 +62,16 @@
         {
             _orderList = (await OrderService.GetAllForClient(_appState.ClientId.Value)).ToList();
         }
+    }
+
+    private void EditOrder(int id)
+    {
+        NavigationManager.NavigateTo($"order/edit/{id}");
+    }
+
+    private async Task DeleteOrder(int id)
+    {
+        await OrderService.DeleteOrder(id);
+        _orderList = (await OrderService.GetAllForClient(_appState.ClientId.Value)).ToList();
     }
 }

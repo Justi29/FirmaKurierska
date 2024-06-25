@@ -57,3 +57,21 @@ C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\
 C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Application\obj\Debug\net6.0\refint\FirmaKurierska.Application.dll
 C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Application\obj\Debug\net6.0\FirmaKurierska.Application.pdb
 C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Application\obj\Debug\net6.0\ref\FirmaKurierska.Application.dll
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Application\bin\Debug\net6.0\FirmaKurierska.Application.deps.json
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Application\bin\Debug\net6.0\FirmaKurierska.Application.dll
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Application\bin\Debug\net6.0\FirmaKurierska.Application.pdb
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Application\bin\Debug\net6.0\FirmaKurierska.Domain.dll
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Application\bin\Debug\net6.0\FirmaKurierska.SharedKernel.dll
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Application\bin\Debug\net6.0\FirmaKurierska.Domain.pdb
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Application\bin\Debug\net6.0\FirmaKurierska.SharedKernel.pdb
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Application\obj\Debug\net6.0\FirmaKurierska.Application.csproj.AssemblyReference.cache
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Application\obj\Debug\net6.0\FirmaKurierska.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Application\obj\Debug\net6.0\FirmaKurierska.Application.AssemblyInfoInputs.cache
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Application\obj\Debug\net6.0\FirmaKurierska.Application.AssemblyInfo.cs
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Application\obj\Debug\net6.0\FirmaKurierska.Application.csproj.CoreCompileInputs.cache
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Application\obj\Debug\net6.0\FirmaKurierska.Application.sourcelink.json
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Application\obj\Debug\net6.0\FirmaKurierska.Application.csproj.CopyComplete
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Application\obj\Debug\net6.0\FirmaKurierska.Application.dll
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Application\obj\Debug\net6.0\refint\FirmaKurierska.Application.dll
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Application\obj\Debug\net6.0\FirmaKurierska.Application.pdb
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Application\obj\Debug\net6.0\ref\FirmaKurierska.Application.dll

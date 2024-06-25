@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("FirmaKurierska.BlazorServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+72fd4bc6b9d80ce8317a6ec19c903c1e8476e2ee")]
 [assembly: System.Reflection.AssemblyProductAttribute("FirmaKurierska.BlazorServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("FirmaKurierska.BlazorServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -53,3 +53,15 @@ C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\
 C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Domain\obj\Debug\net6.0\refint\FirmaKurierska.Domain.dll
 C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Domain\obj\Debug\net6.0\FirmaKurierska.Domain.pdb
 C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Domain\obj\Debug\net6.0\ref\FirmaKurierska.Domain.dll
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Domain\bin\Debug\net6.0\FirmaKurierska.Domain.deps.json
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Domain\bin\Debug\net6.0\FirmaKurierska.Domain.dll
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Domain\bin\Debug\net6.0\FirmaKurierska.Domain.pdb
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Domain\obj\Debug\net6.0\FirmaKurierska.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Domain\obj\Debug\net6.0\FirmaKurierska.Domain.AssemblyInfoInputs.cache
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Domain\obj\Debug\net6.0\FirmaKurierska.Domain.AssemblyInfo.cs
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Domain\obj\Debug\net6.0\FirmaKurierska.Domain.csproj.CoreCompileInputs.cache
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Domain\obj\Debug\net6.0\FirmaKurierska.Domain.sourcelink.json
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Domain\obj\Debug\net6.0\FirmaKurierska.Domain.dll
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Domain\obj\Debug\net6.0\refint\FirmaKurierska.Domain.dll
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Domain\obj\Debug\net6.0\FirmaKurierska.Domain.pdb
+C:\Users\AWA5\Source\Repos\FirmaKurierska7\FirmaKurierska.Domain\obj\Debug\net6.0\ref\FirmaKurierska.Domain.dll

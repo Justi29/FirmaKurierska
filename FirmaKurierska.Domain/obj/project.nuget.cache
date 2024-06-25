@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "SaLqsVHM57VYuOAfeAh2Pa6x+uxGSm3TSe3/wYRrKRgmjkTw/sXfRatx7h72uMMajY8AjtE4ros/M3Gzkk0O9A==",
+  "dgSpecHash": "w6qaEaBHrO3glyurFsuHshqL/IvvthUVaMIeve7lxc+hAchm3O4ooT1w2kHN9w3ru45waBCXHKqZPOGh2HLr/Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\tomec\\OneDrive\\Pulpit\\STUDIA\\MGR_2SEMESTR\\programowanie aplikacji\\FirmaKurierska\\FirmaKurierska.Domain\\FirmaKurierska.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\AWA5\\Source\\Repos\\FirmaKurierska7\\FirmaKurierska.Domain\\FirmaKurierska.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AWA5\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\AWA5\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
+    "C:\\Users\\AWA5\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512"
+  ],
   "logs": []
 }

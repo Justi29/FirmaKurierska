@@ -1,0 +1,88 @@
+﻿@page "/order/create"
+@inject IOrderService OrderService
+@inject NavigationManager NavigationManager
+@inject AppState _appState
+@using FirmaKurierska.Domain.Models
+
+<PageTitle>Create New Order</PageTitle>
+
+<h1>Create New Order</h1>
+
+<EditForm Model="@_order" OnValidSubmit="@CreateNewOrder">
+    <div class="form-group">
+        <label>Status: </label>
+        <InputSelect @bind-Value="_order.Status" class="form-control">
+            @foreach (var status in Enum.GetNames(typeof(OrderStatus)))
+            {
+                <option value="@status">@status</option>
+            }
+        </InputSelect>
+    </div>
+    <div class="form-group">
+        <label>Size: </label>
+        <InputSelect @bind-Value="_order.Size" class="form-control">
+            @foreach (OrderSize size in Enum.GetValues(typeof(OrderSize)))
+            {
+                <option value="@size">@size</option>
+            }
+        </InputSelect>
+    </div>
+    <div class="form-group">
+        <label>Total Cost: </label>
+        <InputNumber @bind-Value="_order.TotalCost" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Pickup Location: </label>
+        <InputText @bind-Value="_order.PickupLocation.Street" class="form-control" placeholder="Street" />
+        <InputText @bind-Value="_order.PickupLocation.City" class="form-control" placeholder="City" />
+        <InputText @bind-Value="_order.PickupLocation.PostCode" class="form-control" placeholder="PostCode" />
+        <InputText @bind-Value="_order.PickupLocation.Country" class="form-control" placeholder="Country" />
+    </div>
+    <div class="form-group">
+        <label>Destination: </label>
+        <InputText @bind-Value="_order.Destination.Street" class="form-control" placeholder="Street" />
+        <InputText @bind-Value="_order.Destination.City" class="form-control" placeholder="City" />
+        <InputText @bind-Value="_order.Destination.PostCode" class="form-control" placeholder="PostCode" />
+        <InputText @bind-Value="_order.Destination.Country" class="form-control" placeholder="Country" />
+    </div>
+    <div class="form-group">
+        <label>Shipping Date: </label>
+        <InputDate @bind-Value="_order.ShippingDate" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Client ID: </label>
+        <InputNumber @bind-Value="_order.ClientId" class="form-control" disabled /> 
+    </div>
+
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit">Create Order</button>
+        <button class="btn btn-secondary" @onclick="Cancel">Cancel</button>
+    </div>
+</EditForm>
+
+@code {
+    private CreateOrderDto _order;
+
+    protected override void OnInitialized()
+    {
+        _order.ClientId = _appState.ClientId.Value; 
+    }
+
+    private async Task CreateNewOrder()
+    {
+        try
+        {
+            var orderId = await OrderService.CreateOrder(_order);
+            NavigationManager.NavigateTo($"/client/orders");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Error creating order: {ex.Message}");
+        }
+    }
+
+    private void Cancel()
+    {
+        NavigationManager.NavigateTo("/client/orders");
+    }
+}
