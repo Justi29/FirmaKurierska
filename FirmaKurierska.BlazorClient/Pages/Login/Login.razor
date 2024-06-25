@@ -14,8 +14,9 @@
     {
         _appState.IsClientLoggedIn = true;
         _appState.IsCourierLoggedIn = false;
+        _appState.ClientId = 1; // Assume client ID 1 for now
         await Task.Delay(100);
-        _navigationManager.NavigateTo("/client");
+        _navigationManager.NavigateTo($"/client/view/1");
     }
 
     private async Task NavigateToCourier()
