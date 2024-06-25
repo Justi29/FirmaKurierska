@@ -1,13 +1,30 @@
 ﻿@page "/client/view"
 @inject IClientService ClientService
 @inject IJSRuntime Js
-@inject NavigationManager NavigationManager
+@inject NavigationManager _navigationManager
 @inject AppState _appState
 
-<PageTitle>Client View</PageTitle>
+<PageTitle>My profile</PageTitle>
 
 <h1>Hello @_client.Name</h1>
+<br />
 
+<h4>Account Details:</h4>
+
+<div>
+    <p><strong>Name:</strong> @_client.Name</p>
+    <p><strong>Surname:</strong> @_client.Surname</p>
+    <p><strong>Phone Number:</strong> @_client.PhoneNumber</p>
+    <p><strong>Email:</strong> @_client.Email</p>
+    <p><strong>IsCompany:</strong> @_client.IsCompany</p>
+    <p><strong>NIP:</strong> @_client.NIP</p>
+</div>
+<div>
+    <button class="btn bg-warning" @onclick="@(()=>EditClient(@_client.Id))">
+        <span class="oi oi-pencil" aria-hidden="true"></span>
+        Edit
+    </button>
+</div>
 
 
 @code {
@@ -27,6 +44,10 @@
                 IsCompany = c.IsCompany,
                 NIP = c.NIP
             };
+    }
+    protected void EditClient(int id)
+    {
+        _navigationManager.NavigateTo($"client/edit/{id}");
     }
 
 }

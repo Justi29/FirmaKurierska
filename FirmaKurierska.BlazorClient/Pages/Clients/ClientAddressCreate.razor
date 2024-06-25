@@ -1,0 +1,54 @@
+﻿@page "/address/create"
+@inject IAddressService AddressService
+@inject NavigationManager NavigationManager
+@inject AppState _appState
+@using FirmaKurierska.SharedKernel.Dto
+
+<PageTitle>Create Address</PageTitle>
+<h1>Create Address</h1>
+
+<EditForm Model="@_address" OnValidSubmit="@CreateAddress">
+    <ValidationSummary />
+    <div class="form-group">
+        <label>Country: </label>
+        <InputText @bind-Value="@_address.Country" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>City: </label>
+        <InputText @bind-Value="@_address.City" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>PostCode: </label>
+        <InputText @bind-Value="@_address.PostCode" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label>Street: </label>
+        <InputText @bind-Value="@_address.Street" class="form-control" />
+    </div>
+    <br />
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit"> <span class="oi oi-plus"></span> Create </button>
+        <button @onclick="BackToList" class="btn btn-secondary" type="button">
+            <span class="oi oi-media-skip-backward" />
+            Back To List
+        </button>
+    </div>
+</EditForm>
+
+@code {
+    private AddressDto _address = new AddressDto();
+
+    private async Task CreateAddress()
+    {
+        // Przekaż Id klienta do nowego adresu
+        _address.ClientId = _appState.ClientId.Value;
+
+        await AddressService.CreateAddress(_address);
+        NavigationManager.NavigateTo("/client/addresses");
+    }
+
+    private void BackToList()
+    {
+        NavigationManager.NavigateTo("/client/addresses");
+    }
+}

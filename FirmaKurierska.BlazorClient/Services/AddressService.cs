@@ -14,7 +14,7 @@ namespace FirmaKurierska.BlazorClient.Services
         Task<AddressDto> GetById(int id);
         Task UpdateAddress(UpdateAddressDto addressDto);
         Task DeleteAddress(int id);
-        //Task CreateAddress(CreateAddressDto addressDto);
+        Task CreateAddress(AddressDto address);
     }
     public class AddressService : IAddressService
     {
@@ -72,17 +72,12 @@ namespace FirmaKurierska.BlazorClient.Services
             response.EnsureSuccessStatusCode(); // Throw an exception if not successful
         }
 
-        //public async Task CreateAddress(CreateAddressDto addressDto)
-        //{
-        //    if (addressDto == null)
-        //    {
-        //        throw new BadRequestException("Invalid address data");
-        //    }
-
-        //    var content = new StringContent(JsonConvert.SerializeObject(addressDto), Encoding.UTF8, "application/json");
-        //    var response = await _httpClient.PostAsync($"http://localhost:5218/Address", content);
-        //    response.EnsureSuccessStatusCode(); // Throw an exception if not successful
-        //}
+        public async Task CreateAddress(AddressDto address)
+        {
+            var content = new StringContent(JsonConvert.SerializeObject(address), System.Text.Encoding.UTF8, "application/json");
+            var response = await _httpClient.PostAsync("http://localhost:5218/Address", content);
+            response.EnsureSuccessStatusCode();
+        }
     }
 
 

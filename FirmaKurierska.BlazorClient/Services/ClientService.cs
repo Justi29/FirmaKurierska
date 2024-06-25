@@ -1,6 +1,7 @@
 ﻿using FirmaKurierska.Domain.Models;
 using FirmaKurierska.SharedKernel.Dto;
 using Newtonsoft.Json;
+using System.Text;
 
 
 namespace FirmaKurierska.BlazorClient.Services
@@ -35,6 +36,14 @@ namespace FirmaKurierska.BlazorClient.Services
                 return result;
             }
             return new ClientDto();
+        }
+        public async Task Update(ClientDto dto)
+        {
+            var json = JsonConvert.SerializeObject(dto);
+            var data = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var response = await _httpClient.PutAsync($"http://localhost:5218/Client/{dto.Id}", data);
+            response.EnsureSuccessStatusCode();
         }
     }
 }

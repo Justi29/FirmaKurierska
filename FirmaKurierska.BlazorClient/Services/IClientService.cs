@@ -7,5 +7,6 @@ namespace FirmaKurierska.BlazorClient.Services
     {
         Task<IEnumerable<ClientDto>> GetAll();
         Task<ClientDto> GetById(int id);
+        Task Update(ClientDto dto);
     }
 }

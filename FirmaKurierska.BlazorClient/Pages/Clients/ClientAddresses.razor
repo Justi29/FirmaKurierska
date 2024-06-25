@@ -10,6 +10,10 @@
 
 <div>
     <h2>Addresses</h2>
+    <div>
+        <a href="address/create" class="btn bg-primary"><span class="oi oi-plus" aria-hidden="true"></span> Create new address </a>
+    </div>
+    <br />
     <table class="table">
         <thead>
             <tr>
@@ -18,7 +22,7 @@
                 <th>City</th>
                 <th>PostCode</th>
                 <th>Country</th>
-                <th>Actions</th>
+                <th>Action</th>
             </tr>
         </thead>
         <tbody>
@@ -31,8 +35,13 @@
                     <td>@address.PostCode</td>
                     <td>@address.Country</td>
                     <td>
-                        <button @onclick="() => EditAddress((int)address.Id)" class="btn btn-primary">Edit</button>
-                        <button @onclick="() => DeleteAddress((int)address.Id)" class="btn btn-danger">Delete</button>
+                        <button class="btn bg-danger" @onclick="()=>DeleteAddress((int)address.Id)"> Delete </button>
+                    </td>
+                    <td>
+                        <button class="btn btn-warning" @onclick="@(() => EditAddress((int)@address.Id))">
+                            <span class="oi oi-pencil" aria-hidden="true"></span>
+                            Edit
+                        </button>
                     </td>
                 </tr>
             }
@@ -44,6 +53,7 @@
     [Parameter]
     public int Id { get; set; }
 
+    private List<OrderDto> _orderList = new List<OrderDto>();
     private List<AddressDto> _addressList = new List<AddressDto>();
 
     protected override async Task OnInitializedAsync()
@@ -53,16 +63,13 @@
             _addressList = (await AddressService.GetAllForClient(_appState.ClientId.Value)).ToList();
         }
     }
-
+    protected void EditAddress(int id)
+    {
+        NavigationManager.NavigateTo($"address/edit/{id}");
+    }
     private async Task DeleteAddress(int id)
     {
-
         await AddressService.DeleteAddress(id);
         _addressList = (await AddressService.GetAllForClient(_appState.ClientId.Value)).ToList();
-    }
-
-    private void EditAddress(int id)
-    {
-        NavigationManager.NavigateTo($"/address/edit/{id}");
     }
 }
