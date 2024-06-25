@@ -30,5 +30,10 @@ msbuild.log
 msbuild.err
 msbuild.wrn
 
+# .NET Directories
+bin/
+obj/
+Debug/
+
 # Visual Studio 2015
 .vs/

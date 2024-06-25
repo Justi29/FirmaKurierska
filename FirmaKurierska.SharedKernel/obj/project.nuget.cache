@@ -1,12 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lH21BF+xYErC1ifxsw9FDEW2zCL6jZUH87o02WEohD9obYeQRdgZOhjk0hrnZ+OpLQ375w4KZg/e7gey3GwCnA==",
+  "dgSpecHash": "WuFwezVrBwZ/C4WrtSxkNLWE+wp02AoqNsZ5ef3jUH2b3esrSK6KolSCKQFqTIVW0ylL4t6zXtjiz1vWV5K64A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.SharedKernel\\FirmaKurierska.SharedKernel.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\AWA5\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.25\\microsoft.windowsdesktop.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\AWA5\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.25\\microsoft.netcore.app.ref.6.0.25.nupkg.sha512",
-    "C:\\Users\\AWA5\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.25\\microsoft.aspnetcore.app.ref.6.0.25.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.SharedKernel\\FirmaKurierska.SharedKernel.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }

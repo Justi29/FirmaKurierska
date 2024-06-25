@@ -43,3 +43,23 @@ C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debu
 C:\Users\AWA5\Source\Repos\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.SharedKernel.pdb
 C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.SharedKernel.dll
 C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.SharedKernel.pdb
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.Infrastructure.deps.json
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.Infrastructure.dll
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.Infrastructure.pdb
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.Application.dll
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.Domain.dll
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.SharedKernel.dll
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.Application.pdb
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.SharedKernel.pdb
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Infrastructure\bin\Debug\net6.0\FirmaKurierska.Domain.pdb
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\FirmaKurierska.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\FirmaKurierska.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\FirmaKurierska.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\FirmaKurierska.Infrastructure.AssemblyInfo.cs
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\FirmaKurierska.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\FirmaKurierska.Infrastructure.sourcelink.json
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\FirmaKur.BF38BAAB.Up2Date
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\FirmaKurierska.Infrastructure.dll
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\refint\FirmaKurierska.Infrastructure.dll
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\FirmaKurierska.Infrastructure.pdb
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.Infrastructure\obj\Debug\net6.0\ref\FirmaKurierska.Infrastructure.dll
