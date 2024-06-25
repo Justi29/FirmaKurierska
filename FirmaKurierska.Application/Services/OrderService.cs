@@ -104,6 +104,13 @@ namespace FirmaKurierska.Application.Services
             List<OrderDto> result = _mapper.Map<List<OrderDto>>(orders);
             return result;
         }
+        public List<OrderDto> GetAllWithoutCourier()
+        {
+            var orders = _uow.OrderRepository.GetAllWithoutCourier();
+
+            List<OrderDto> result = _mapper.Map<List<OrderDto>>(orders);
+            return result;
+        }
 
         public List<OrderDto> GetAllForClient(int clientId)
         {

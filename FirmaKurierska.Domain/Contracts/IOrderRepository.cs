@@ -6,6 +6,7 @@ namespace FirmaKurierska.Domain.Contracts
     {
         int GetMaxId();
         List<Order> GetAll();
+        List<Order> GetAllWithoutCourier();
         List<Order> GetAllForClient(int clientId);
         List<Order> GetAllForCourier(int clientId);
 
