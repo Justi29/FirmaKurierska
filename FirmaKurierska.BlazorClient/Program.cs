@@ -10,6 +10,7 @@ builder.RootComponents.Add<HeadOutlet>("head::after");
 
 builder.Services.AddScoped<IClientService, ClientService>();
 
+builder.Services.AddSingleton<AppState>();
 
 // modyfikacja klienta http aby pobiera³ dane z pliku konfiguracyjnego
 builder.Services.AddScoped(sp => new HttpClient

@@ -1,4 +1,7 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
+﻿@inject AppState _appState
+@inject NavigationManager _navigationManager
+
+<div class="top-row ps-3 navbar navbar-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="">FirmaKurierska.BlazorClient</a>
         <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
@@ -14,16 +17,36 @@
                 <span class="oi oi-home" aria-hidden="true"></span> Home
             </NavLink>
         </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="client">
-                <span class="oi oi-book" aria-hidden="true"></span> Log In as Client
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="courier">
-                <span class="oi oi-book" aria-hidden="true"></span> Log In as Courier
-            </NavLink>
-        </div>
+        @if (_appState.IsClientLoggedIn)
+        {
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="orders">
+                    <span class="oi oi-book" aria-hidden="true"></span> Orders
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <button class="btn btn-link nav-link" @onclick="Logout">Logout</button>
+            </div>
+        }
+        else if (_appState.IsCourierLoggedIn)
+        {
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="deliveries">
+                    <span class="oi oi-book" aria-hidden="true"></span> Deliveries
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <button class="btn btn-link nav-link" @onclick="Logout">Logout</button>
+            </div>
+        } 
+        else
+        {
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="login">
+                    <span class="oi oi-book" aria-hidden="true"></span> Login
+                </NavLink>
+            </div>
+        }
     </nav>
 </div>
 
@@ -35,5 +58,30 @@
     private void ToggleNavMenu()
     {
         collapseNavMenu = !collapseNavMenu;
+    }
+
+    private void Logout()
+    {
+        _appState.IsClientLoggedIn = false;
+        _appState.IsCourierLoggedIn = false;
+        _navigationManager.NavigateTo("/login");
+    }
+
+    protected override async Task OnInitializedAsync()
+    {
+        _appState.OnChange += StateChanged; // Subscribe to _appState changes
+        await base.OnInitializedAsync();
+    }
+
+    private void StateChanged()
+    {
+        // Force NavMenu to re-render when AppState changes
+        StateHasChanged();
+    }
+
+    // Unsubscribe
+    public void Dispose()
+    {
+        _appState.OnChange -= StateChanged;
     }
 }

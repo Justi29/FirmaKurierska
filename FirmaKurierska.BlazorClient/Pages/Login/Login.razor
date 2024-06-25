@@ -1,0 +1,28 @@
+﻿@page "/login"
+@inject AppState _appState
+@inject NavigationManager _navigationManager
+
+<h3>Login</h3>
+
+<div class="login-buttons">
+    <button class="btn btn-primary" @onclick="NavigateToClient">Log in as Client</button>
+    <button class="btn btn-secondary" @onclick="NavigateToCourier">Log in as Courier</button>
+</div>
+
+@code {
+    private async Task NavigateToClient()
+    {
+        _appState.IsClientLoggedIn = true;
+        _appState.IsCourierLoggedIn = false;
+        await Task.Delay(100);
+        _navigationManager.NavigateTo("/client");
+    }
+
+    private async Task NavigateToCourier()
+    {
+        _appState.IsClientLoggedIn = false;
+        _appState.IsCourierLoggedIn = true;
+        await Task.Delay(100);
+        _navigationManager.NavigateTo("/courier");
+    }
+}
