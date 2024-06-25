@@ -1,93 +1,34 @@
-﻿@page "/client/view/{id:int}"
-@inject IOrderService OrderService
-@inject IAddressService AddressService
+﻿@page "/client/view"
+@inject IClientService ClientService
 @inject IJSRuntime Js
 @inject NavigationManager NavigationManager
 @inject AppState _appState
 
 <PageTitle>Client View</PageTitle>
 
-<h1>Client View</h1>
+<h1>Hello @_client.Name</h1>
 
-<div>
-    <h2>Orders</h2>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Status</th>
-                <th>Size</th>
-                <th>TotalCost</th>
-                <th>PickupLocation</th>
-                <th>Destination</th>
-                <th>ShippingDate</th>
-                <th>PickupDate</th>
-                <th>DeliveryDate</th>
-                <th>ClientId</th>
-                <th>CourierId</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var order in _orderList)
-            {
-                <tr>
-                    <td>@order.Id</td>
-                    <td>@order.Status</td>
-                    <td>@order.Size</td>
-                    <td>@order.TotalCost</td>
-                    <td>@order.PickupLocation.Street, @order.PickupLocation.City, @order.PickupLocation.PostCode, @order.PickupLocation.Country</td>
-                    <td>@order.Destination.Street, @order.Destination.City, @order.Destination.PostCode, @order.Destination.Country</td>
-                    <td>@order.ShippingDate.ToString("yyyy-MM-dd")</td>
-                    <td>@(order.PickupDate.HasValue ? order.PickupDate.Value.ToString("yyyy-MM-dd") : "-")</td>
-                    <td>@(order.DeliveryDate.HasValue ? order.DeliveryDate.Value.ToString("yyyy-MM-dd") : "-")</td>
-                    <td>@order.ClientId</td>
-                    <td>@order.CourierId</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-</div>
 
-<div>
-    <h2>Addresses</h2>
-    <table class="table">
-        <thead>
-            <tr>
-                <th>Id</th>
-                <th>Street</th>
-                <th>City</th>
-                <th>PostCode</th>
-                <th>Country</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var address in _addressList)
-            {
-                <tr>
-                    <td>@address.Id</td>
-                    <td>@address.Street</td>
-                    <td>@address.City</td>
-                    <td>@address.PostCode</td>
-                    <td>@address.Country</td>
-                </tr>
-            }
-        </tbody>
-    </table>
-</div>
 
 @code {
     [Parameter]
     public int Id { get; set; }
-
-    private List<OrderDto> _orderList = new List<OrderDto>();
-    private List<AddressDto> _addressList = new List<AddressDto>();
+    private ClientDto _client = new ClientDto();
 
     protected override async Task OnInitializedAsync()
     {
-        if (_appState.ClientId.HasValue)
-        {
-            _orderList = (await OrderService.GetAllForClient(_appState.ClientId.Value)).ToList();
-            _addressList = (await AddressService.GetAllForClient(_appState.ClientId.Value)).ToList();
-        }
+        base.OnInitialized();
+        var c = await ClientService.GetById(Id);
+        _client = new ClientDto()
+            {
+                Id = c.Id,
+                Name = c.Name,
+                Surname = c.Surname,
+                PhoneNumber = c.PhoneNumber,
+                Email = c.Email,
+                IsCompany = c.IsCompany,
+                NIP = c.NIP
+            };
     }
+
 }
