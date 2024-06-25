@@ -9,6 +9,7 @@ namespace FirmaKurierska.BlazorClient.Services
     public interface IOrderService
     {
         Task<IEnumerable<OrderDto>> GetAllForClient(int clientId);
+        Task<IEnumerable<OrderDto>> GetAllForCourier(int courierId);
     }
     public class OrderService : IOrderService
     {
@@ -22,6 +23,18 @@ namespace FirmaKurierska.BlazorClient.Services
         public async Task<IEnumerable<OrderDto>> GetAllForClient(int clientId)
         {
             var response = await _httpClient.GetAsync($"http://localhost:5218/Order/client/{clientId}");
+            if (response.IsSuccessStatusCode)
+            {
+                var content = await response.Content.ReadAsStringAsync();
+                var orders = JsonConvert.DeserializeObject<IEnumerable<OrderDto>>(content);
+                return orders;
+            }
+            return new List<OrderDto>();
+        }
+
+        public async Task<IEnumerable<OrderDto>> GetAllForCourier(int courierId)
+        {
+            var response = await _httpClient.GetAsync($"http://localhost:5218/Order/courier/{courierId}");
             if (response.IsSuccessStatusCode)
             {
                 var content = await response.Content.ReadAsStringAsync();

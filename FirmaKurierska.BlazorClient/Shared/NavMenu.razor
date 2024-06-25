@@ -31,8 +31,18 @@
         else if (_appState.IsCourierLoggedIn)
         {
             <div class="nav-item px-3">
+                <NavLink class="nav-link" href="courier">
+                    <span class="oi oi-book" aria-hidden="true"></span> My Profile
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
                 <NavLink class="nav-link" href="deliveries">
-                    <span class="oi oi-book" aria-hidden="true"></span> Deliveries
+                    <span class="oi oi-book" aria-hidden="true"></span> My Deliveries
+                </NavLink>
+            </div>
+            <div class="nav-item px-3">
+                <NavLink class="nav-link" href="deliveries/list">
+                    <span class="oi oi-book" aria-hidden="true"></span> Manage Deliveries
                 </NavLink>
             </div>
             <div class="nav-item px-3">

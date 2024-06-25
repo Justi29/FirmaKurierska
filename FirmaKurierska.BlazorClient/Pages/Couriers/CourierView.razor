@@ -1,0 +1,23 @@
+﻿@page "/courier"
+
+@inject ICourierService _courierService
+@inject IJSRuntime Js
+@inject NavigationManager NavigationManager
+@inject AppState _appState
+
+<PageTitle>Deliveries</PageTitle>
+
+<h1>Hello @_courier.Name</h1>
+
+
+@code {
+    private CourierDto _courier = new CourierDto();
+
+    protected override async Task OnInitializedAsync()
+    {
+        if (_appState.CourierId.HasValue)
+        {
+            _courier = await _courierService.GetById(_appState.CourierId.Value);
+        }
+    }
+}

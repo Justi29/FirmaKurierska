@@ -33,6 +33,8 @@
 
         public int? ClientId { get; set; }
 
+        public int? CourierId { get; set; }
+
         public event Action OnChange;
 
         private void NotifyStateChanged() => OnChange?.Invoke();
