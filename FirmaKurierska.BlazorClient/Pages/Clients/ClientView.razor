@@ -11,14 +11,12 @@
 
 
 @code {
-    [Parameter]
-    public int Id { get; set; }
     private ClientDto _client = new ClientDto();
 
     protected override async Task OnInitializedAsync()
     {
         base.OnInitialized();
-        var c = await ClientService.GetById(Id);
+        var c = await ClientService.GetById(_appState.ClientId.Value);
         _client = new ClientDto()
             {
                 Id = c.Id,

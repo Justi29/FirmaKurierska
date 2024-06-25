@@ -18,6 +18,7 @@
                 <th>City</th>
                 <th>PostCode</th>
                 <th>Country</th>
+                <th>Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -29,6 +30,10 @@
                     <td>@address.City</td>
                     <td>@address.PostCode</td>
                     <td>@address.Country</td>
+                    <td>
+                        <button @onclick="() => EditAddress((int)address.Id)" class="btn btn-primary">Edit</button>
+                        <button @onclick="() => DeleteAddress((int)address.Id)" class="btn btn-danger">Delete</button>
+                    </td>
                 </tr>
             }
         </tbody>
@@ -39,7 +44,6 @@
     [Parameter]
     public int Id { get; set; }
 
-    private List<OrderDto> _orderList = new List<OrderDto>();
     private List<AddressDto> _addressList = new List<AddressDto>();
 
     protected override async Task OnInitializedAsync()
@@ -48,5 +52,17 @@
         {
             _addressList = (await AddressService.GetAllForClient(_appState.ClientId.Value)).ToList();
         }
+    }
+
+    private async Task DeleteAddress(int id)
+    {
+
+        await AddressService.DeleteAddress(id);
+        _addressList = (await AddressService.GetAllForClient(_appState.ClientId.Value)).ToList();
+    }
+
+    private void EditAddress(int id)
+    {
+        NavigationManager.NavigateTo($"/address/edit/{id}");
     }
 }
