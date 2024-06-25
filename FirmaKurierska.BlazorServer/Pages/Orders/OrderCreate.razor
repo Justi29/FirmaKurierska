@@ -1,0 +1,88 @@
+﻿@page "/order/create"
+@inject IOrderService _orderService
+@inject NavigationManager _navigationManager
+
+<PageTitle>Create Order</PageTitle>
+<h1>Create Order</h1>
+
+<EditForm Model="@_order" OnValidSubmit="@CreateOrder">
+    <FluentValidationValidator @ref="_fluentValidationValidator" DisableAssemblyScanning="@true" />
+    <ValidationSummary />
+    <div class="form-group">
+        <label>Status: </label>
+        <InputSelect @bind-Value="@_order.Status" class="form-control">
+            @foreach (var status in Enum.GetValues(typeof(OrderStatus)))
+            {
+                <option value="@status">@status</option>
+            }
+        </InputSelect>
+        <ValidationMessage For="@(() => _order.Status)" />
+    </div>
+    <div class="form-group">
+        <label>Size: </label>
+        <InputSelect @bind-Value="@_order.Size" class="form-control">
+            @foreach (var size in Enum.GetValues(typeof(OrderSize)))
+            {
+                <option value="@size">@size</option>
+            }
+        </InputSelect>
+        <ValidationMessage For="@(() => _order.Size)" />
+    </div>
+    <div class="form-group">
+        <label>Total Cost: </label>
+        <InputNumber @bind-Value="@_order.TotalCost" class="form-control" />
+        <ValidationMessage For="@(() => _order.TotalCost)" />
+    </div>
+    <div class="form-group">
+        <label>Pickup Location: </label>
+        <InputText @bind-Value="@_order.PickupLocation.Street" class="form-control" placeholder="Street" />
+        <InputText @bind-Value="@_order.PickupLocation.City" class="form-control" placeholder="City" />
+        <InputText @bind-Value="@_order.PickupLocation.PostCode" class="form-control" placeholder="PostCode" />
+        <InputText @bind-Value="@_order.PickupLocation.Country" class="form-control" placeholder="Country" />
+    </div>
+    <div class="form-group">
+        <label>Destination: </label>
+        <InputText @bind-Value="@_order.Destination.Street" class="form-control" placeholder="Street" />
+        <InputText @bind-Value="@_order.Destination.City" class="form-control" placeholder="City" />
+        <InputText @bind-Value="@_order.Destination.PostCode" class="form-control" placeholder="PostCode" />
+        <InputText @bind-Value="@_order.Destination.Country" class="form-control" placeholder="Country" />
+    </div>
+    <div class="form-group">
+        <label>Shipping Date: </label>
+        <InputDate @bind-Value="@_order.ShippingDate" class="form-control" />
+        <ValidationMessage For="@(() => _order.ShippingDate)" />
+    </div>
+    <div class="form-group">
+        <label>Client ID: </label>
+        <InputNumber @bind-Value="@_order.ClientId" class="form-control" />
+        <ValidationMessage For="@(() => _order.ClientId)" />
+    </div>
+    <br />
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit"> <span class="oi oi-plus"></span> Create </button>
+        <button @onclick="BackToList" class="btn btn-secondary" type="button">
+            <span class="oi oi-media-skip-backward" />
+            Back To List
+        </button>
+    </div>
+</EditForm>
+
+@code {
+    private FluentValidationValidator? _fluentValidationValidator;
+    private CreateOrderDto _order = new CreateOrderDto
+        {
+            PickupLocation = new AddressDto(),
+            Destination = new AddressDto()
+        };
+
+    private void CreateOrder()
+    {
+        var newId = _orderService.Create(_order);
+        _navigationManager.NavigateTo($"/order");
+    }
+
+    private void BackToList()
+    {
+        _navigationManager.NavigateTo("/order");
+    }
+}
