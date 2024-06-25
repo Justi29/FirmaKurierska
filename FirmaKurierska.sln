@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirmaKurierska.BlazorServer
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirmaKurierska.SharedKernel", "FirmaKurierska.SharedKernel\FirmaKurierska.SharedKernel.csproj", "{89ACDFB5-3433-4F69-B4BF-94643DF05354}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FirmaKurierska.BlazorClient", "FirmaKurierska.BlazorClient\FirmaKurierska.BlazorClient.csproj", "{6E91E2D9-854C-476C-B290-57B6A729C7CF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{89ACDFB5-3433-4F69-B4BF-94643DF05354}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{89ACDFB5-3433-4F69-B4BF-94643DF05354}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{89ACDFB5-3433-4F69-B4BF-94643DF05354}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E91E2D9-854C-476C-B290-57B6A729C7CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E91E2D9-854C-476C-B290-57B6A729C7CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E91E2D9-854C-476C-B290-57B6A729C7CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E91E2D9-854C-476C-B290-57B6A729C7CF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

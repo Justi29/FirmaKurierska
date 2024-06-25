@@ -30,3 +30,19 @@ C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\Firma
 C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.SharedKernel\obj\Debug\net6.0\refint\FirmaKurierska.SharedKernel.dll
 C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.SharedKernel\obj\Debug\net6.0\FirmaKurierska.SharedKernel.pdb
 C:\Users\tomec\OneDrive\Pulpit\STUDIA\MGR_2SEMESTR\programowanie aplikacji\FirmaKurierska\FirmaKurierska.SharedKernel\obj\Debug\net6.0\ref\FirmaKurierska.SharedKernel.dll
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.SharedKernel\bin\Debug\net6.0\FirmaKurierska.SharedKernel.deps.json
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.SharedKernel\bin\Debug\net6.0\FirmaKurierska.SharedKernel.dll
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.SharedKernel\bin\Debug\net6.0\FirmaKurierska.SharedKernel.pdb
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.SharedKernel\bin\Debug\net6.0\FirmaKurierska.Domain.dll
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.SharedKernel\bin\Debug\net6.0\FirmaKurierska.Domain.pdb
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.SharedKernel\obj\Debug\net6.0\FirmaKurierska.SharedKernel.csproj.AssemblyReference.cache
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.SharedKernel\obj\Debug\net6.0\FirmaKurierska.SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.SharedKernel\obj\Debug\net6.0\FirmaKurierska.SharedKernel.AssemblyInfoInputs.cache
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.SharedKernel\obj\Debug\net6.0\FirmaKurierska.SharedKernel.AssemblyInfo.cs
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.SharedKernel\obj\Debug\net6.0\FirmaKurierska.SharedKernel.csproj.CoreCompileInputs.cache
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.SharedKernel\obj\Debug\net6.0\FirmaKurierska.SharedKernel.sourcelink.json
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.SharedKernel\obj\Debug\net6.0\FirmaKur.07F73848.Up2Date
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.SharedKernel\obj\Debug\net6.0\FirmaKurierska.SharedKernel.dll
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.SharedKernel\obj\Debug\net6.0\refint\FirmaKurierska.SharedKernel.dll
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.SharedKernel\obj\Debug\net6.0\FirmaKurierska.SharedKernel.pdb
+C:\Users\adapo\Desktop\JUSTI\Programowanie Aplikacji Biznesowych\FirmaKurierska\FirmaKurierska.SharedKernel\obj\Debug\net6.0\ref\FirmaKurierska.SharedKernel.dll

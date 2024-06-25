@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "yqUS997Pbl+QH5UnpLjr2OKmbNUR7BoQWns53Sr1vnA=",
+  "Hash": "LsMB/eSW/gUiJAX/x38d4Qxf6orqyxNUJdtPdNebf1o=",
   "Source": "FirmaKurierska.BlazorServer",
   "BasePath": "_content/FirmaKurierska.BlazorServer",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "FirmaKurierska.BlazorServer\\wwwroot",
       "Source": "FirmaKurierska.BlazorServer",
-      "ContentRoot": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
       "BasePath": "_content/FirmaKurierska.BlazorServer",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\obj\\Debug\\net6.0\\scopedcss\\bundle\\FirmaKurierska.BlazorServer.styles.css",
+      "Identity": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\obj\\Debug\\net6.0\\scopedcss\\bundle\\FirmaKurierska.BlazorServer.styles.css",
       "SourceId": "FirmaKurierska.BlazorServer",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/FirmaKurierska.BlazorServer",
       "RelativePath": "FirmaKurierska.BlazorServer.styles.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\obj\\Debug\\net6.0\\scopedcss\\bundle\\FirmaKurierska.BlazorServer.styles.css"
+      "OriginalItemSpec": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\obj\\Debug\\net6.0\\scopedcss\\bundle\\FirmaKurierska.BlazorServer.styles.css"
     },
     {
-      "Identity": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FirmaKurierska.BlazorServer.bundle.scp.css",
+      "Identity": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FirmaKurierska.BlazorServer.bundle.scp.css",
       "SourceId": "FirmaKurierska.BlazorServer",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/FirmaKurierska.BlazorServer",
       "RelativePath": "FirmaKurierska.BlazorServer.bundle.scp.css",
       "AssetKind": "All",
@@ -52,13 +52,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FirmaKurierska.BlazorServer.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\FirmaKurierska.BlazorServer.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "FirmaKurierska.BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
       "BasePath": "_content/FirmaKurierska.BlazorServer",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "FirmaKurierska.BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
       "BasePath": "_content/FirmaKurierska.BlazorServer",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "FirmaKurierska.BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
       "BasePath": "_content/FirmaKurierska.BlazorServer",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "FirmaKurierska.BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
       "BasePath": "_content/FirmaKurierska.BlazorServer",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "FirmaKurierska.BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
       "BasePath": "_content/FirmaKurierska.BlazorServer",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "FirmaKurierska.BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
       "BasePath": "_content/FirmaKurierska.BlazorServer",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "FirmaKurierska.BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
       "BasePath": "_content/FirmaKurierska.BlazorServer",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "FirmaKurierska.BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
       "BasePath": "_content/FirmaKurierska.BlazorServer",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "FirmaKurierska.BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
       "BasePath": "_content/FirmaKurierska.BlazorServer",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "FirmaKurierska.BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
       "BasePath": "_content/FirmaKurierska.BlazorServer",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "FirmaKurierska.BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
       "BasePath": "_content/FirmaKurierska.BlazorServer",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\css\\site.css",
       "SourceId": "FirmaKurierska.BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
       "BasePath": "_content/FirmaKurierska.BlazorServer",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\favicon.ico",
       "SourceId": "FirmaKurierska.BlazorServer",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\AWA5\\source\\repos\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\adapo\\Desktop\\JUSTI\\Programowanie Aplikacji Biznesowych\\FirmaKurierska\\FirmaKurierska.BlazorServer\\wwwroot\\",
       "BasePath": "_content/FirmaKurierska.BlazorServer",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
