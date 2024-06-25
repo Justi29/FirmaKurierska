@@ -26,7 +26,12 @@ namespace FirmaKurierska.Application.Services
 
             var id = _uow.CourierRepository.GetMaxId() + 1;
             var courier = _mapper.Map<Courier>(dto);
+
             courier.Id = id;
+            courier.ImageUrl = String.IsNullOrEmpty(dto.ImageUrl)
+             ? "/images/image1.png"
+             : dto.ImageUrl;
+
 
             _uow.CourierRepository.Insert(courier);
             _uow.Commit();

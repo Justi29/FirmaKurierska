@@ -4,10 +4,11 @@
 @inject NavigationManager NavigationManager
 @inject AppState _appState
 
-<PageTitle>Deliveries</PageTitle>
+<PageTitle>Manage Deliveries</PageTitle>
 
 <div>
     <h2>Deliveries</h2>
+    <h4>Here you can select new orders you want to handle</h4>
     <table class="table">
         <thead>
             <tr>
@@ -19,6 +20,7 @@
                 <th>ShippingDate</th>
                 <th>PickupDate</th>
                 <th>DeliveryDate</th>
+                <th>Handle order</th>
             </tr>
         </thead>
         <tbody>
@@ -33,6 +35,12 @@
                     <td>@order.ShippingDate.ToString("yyyy-MM-dd")</td>
                     <td>@(order.PickupDate.HasValue ? order.PickupDate.Value.ToString("yyyy-MM-dd") : "-")</td>
                     <td>@(order.DeliveryDate.HasValue ? order.DeliveryDate.Value.ToString("yyyy-MM-dd") : "-")</td>
+                    <td>
+                        <button class="btn btn-info" @onclick="@(()=>UpdateOrder(@order.Id))">
+                            <span aria-hidden="true"></span>
+                            Handle
+                        </button>
+                    </td>
                 </tr>
             }
         </tbody>
@@ -49,8 +57,25 @@
     {
         if (_appState.CourierId.HasValue)
         {
-            // _orderList = (await OrderService.GetAll(_appState.CourierId.Value)).ToList();
+            _orderList = (await OrderService.GetAllWithoutCourier()).ToList();
         }
     }
+    private async Task UpdateOrder(int orderId)
+    {
+        if (_appState.CourierId.HasValue)
+        {
+            var updateDto = new UpdateOrderDto { Id = orderId, CourierId = _appState.CourierId.Value };
+            var success = await OrderService.UpdateOrder(updateDto);
+            if (success)
+            {
+                _orderList = (await OrderService.GetAllWithoutCourier()).ToList();
+            }
+            else
+            {
+                await Js.InvokeVoidAsync("alert", "Failed to update the order.");
+            }
+        }
+    }
+
 }
 

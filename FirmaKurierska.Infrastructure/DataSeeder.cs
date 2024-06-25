@@ -59,6 +59,7 @@ namespace FirmaKurierska.Infrastructure
                             Surname = "Mak",
                             Email = "mmaku@gmail.com",
                             PhoneNumber = "234567890",
+                            ImageUrl = "/images/image2.jpg",
                         },
                         new Courier()
                         {
@@ -67,6 +68,7 @@ namespace FirmaKurierska.Infrastructure
                             Surname = "Rak",
                             Email = "biraczek@gmail.com",
                             PhoneNumber = "987654321",
+                            ImageUrl = "/images/image3.jpeg",
                         },
 
                     };
@@ -106,6 +108,53 @@ namespace FirmaKurierska.Infrastructure
                             DeliveryDate = new DateTime(2024, 6, 12),
                             ClientId = 1,
                             CourierId = 1,
+                        },
+                        new Order()
+                        {
+                            Id = 3,
+                            Status = OrderStatus.Delivered,
+                            Size = OrderSize.Medium,
+                            TotalCost = 150.00,
+                            PickupLocation = new Address { Street = "ul. Małopolska 4", City = "Kraków", Country = "Poland", PostCode = "33-240", ClientId = 2 },
+                            Destination = new Address { Street = "ul. Grzegórzecka 31", City = "Kraków", Country = "Poland", PostCode = "30-233", ClientId = 2 },
+                            ShippingDate = new DateTime(2024, 6, 15),
+                            PickupDate = new DateTime(2024, 6, 16),
+                            DeliveryDate = new DateTime(2024, 6, 17),
+                            ClientId = 2,
+                            CourierId = 1
+                        },
+                        new Order()
+                        {
+                            Id = 4,
+                            Status = OrderStatus.ReadyForPickup,
+                            Size = OrderSize.Large,
+                            TotalCost = 150.00,
+                            PickupLocation = new Address { Street = "ul. Miodowa 12", City = "Kraków", Country = "Poland", PostCode = "33-240", ClientId = 2 },
+                            Destination = new Address { Street = "ul. Startowiślna 1", City = "Kraków", Country = "Poland", PostCode = "30-233", ClientId = 2 },
+                            ShippingDate = new DateTime(2024, 6, 15),
+                            ClientId = 2
+                        },
+                        new Order()
+                        {
+                            Id = 5,
+                            Status = OrderStatus.ReadyForPickup,
+                            Size = OrderSize.Small,
+                            TotalCost = 150.00,
+                            PickupLocation = new Address { Street = "ul. Grunwaldzka 11/4", City = "Kraków", Country = "Poland", PostCode = "33-240", ClientId = 2 },
+                            Destination = new Address { Street = "ul. Grzanka 313", City = "Kraków", Country = "Poland", PostCode = "30-233", ClientId = 2 },
+                            ShippingDate = new DateTime(2024, 6, 15),
+                            ClientId = 1
+                        },
+                        new Order()
+                        {
+                            Id = 6,
+                            Status = OrderStatus.ReadyForPickup,
+                            Size = OrderSize.Medium,
+                            TotalCost = 150.00,
+                            PickupLocation = new Address { Street = "ul. Bronowicka 24", City = "Kraków", Country = "Poland", PostCode = "33-240", ClientId = 2 },
+                            Destination = new Address { Street = "ul. Wrocławska 54", City = "Kraków", Country = "Poland", PostCode = "30-233", ClientId = 2 },
+                            ShippingDate = new DateTime(2024, 6, 15),
+                            ClientId = 2,
                         },
                     };
                     _dbContext.Orders.AddRange(orders);
